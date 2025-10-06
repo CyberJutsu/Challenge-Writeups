@@ -1,0 +1,4 @@
+/Users/0xmacbook/Library/Android/sdk/cmake/3.22.1/bin/ninja \
+  -C \
+  /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/.cxx/RelWithDebInfo/3h4v5m15/x86_64 \
+  native-lib

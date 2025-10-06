@@ -1,0 +1,32 @@
+<%@ page contentType="text/html; charset=UTF-8" %>
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>Gadgets Store</title>
+	<link rel="stylesheet" href="<%= request.getContextPath() %>/assets/css/style.css"/>
+</head>
+<body class="hk-body">
+	<header class="hk-header">
+		<h1>Gadgets Store</h1>
+		<nav>
+			<a class="btn" href="<%= request.getContextPath() %>/">Home</a>
+			<span class="sep">/</span>
+			<%
+				Object uname = request.getSession().getAttribute("username");
+				if (uname == null) {
+			%>
+				<a class="btn" href="<%= request.getContextPath() %>/auth/login">Login</a>
+				<a class="btn" href="<%= request.getContextPath() %>/auth/register">Register</a>
+			<%
+				} else {
+			%>
+				<a class="btn" href="<%= request.getContextPath() %>/profile">Profile</a>
+				<a class="btn" href="<%= request.getContextPath() %>/logout">Logout</a>
+			<%
+				}
+			%>
+		</nav>
+	</header>
+	<div class="hk-container">

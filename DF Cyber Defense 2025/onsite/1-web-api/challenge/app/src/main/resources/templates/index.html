@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinovaBank - Statement Viewer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/bank.css">
+</head>
+<body>
+<header class="topbar">
+    <div class="brand">
+        <div class="logo">🏦</div>
+        <div class="brand-text">
+            <div class="bank-name">FinovaBank - Statement Viewer</div>
+        </div>
+    </div>
+</header>
+
+<main class="container">
+    <section class="card">
+        <h1 class="card-title">🔍 Transaction Search</h1>
+        
+        <form id="form-search" class="search-form">
+            <div class="form-row">
+                <input id="customerName" type="text" class="input" placeholder="Customer Name">
+                <input id="merchantName" type="text" class="input" placeholder="Merchant Name">
+                <input id="transactionDate" type="text" class="input" placeholder="Date (YYYY-MM-DD)">
+            </div>
+            <div class="form-row">
+                <select id="transactionType" class="input">
+                    <option value="">All Types</option>
+                    <option value="CREDIT">Credit</option>
+                    <option value="DEBIT">Debit</option>
+                </select>
+                <button class="btn primary" type="submit">Search</button>
+            </div>
+        </form>
+    </section>
+
+    
+
+    <section class="card">
+        <div class="card-title row">
+            <span>💳 Transaction Statements</span>
+            <span id="status" class="status">Ready</span>
+        </div>
+        <div id="results" class="results"></div>
+    </section>
+</main>
+
+<footer class="footer">© FinovaBank - Statement Viewer</footer>
+
+<script src="/js/app.js"></script>
+</body>
+</html>
+
+

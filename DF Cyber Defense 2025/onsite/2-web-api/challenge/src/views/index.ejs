@@ -1,0 +1,209 @@
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Create Note</h5>
+                    <div class="mb-3">
+                        <label for="notePrefix">Prefix (optional):</label>
+                        <input type="text" id="notePrefix" class="form-control" placeholder="e.g. work, personal" maxlength="50">
+                        <small class="text-muted">Used for grouping notes</small>
+                    </div>
+                    <div class="mb-3">
+                        <textarea id="noteContent" class="form-control" rows="5" placeholder="Enter your note..."></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="expiresIn">Expires in (minutes):</label>
+                        <input type="number" id="expiresIn" class="form-control" placeholder="Optional (default: 10 minutes)" min="1" max="60">
+                        <small class="text-muted">Maximum 60 minutes. If not specified, notes expire after 10 minutes.</small>
+                    </div>
+                    <button id="createNoteBtn" class="btn btn-primary">Create Note</button>
+                    
+                    <div id="noteResult" class="mt-3" style="display: none;">
+                        <div class="alert alert-success">
+                            <strong>Note created!</strong>
+                            <div class="input-group mt-2">
+                                <input type="text" id="shareLink" class="form-control" readonly>
+                                <button class="btn btn-outline-secondary" onclick="copyToClipboard()">Copy</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card mt-4">
+                <div class="card-body">
+                    <h5 class="card-title">Search Notes</h5>
+                    <div class="input-group">
+                        <input type="text" id="searchInput" class="form-control" placeholder="Enter Note ID or Prefix">
+                        <button id="searchBtn" class="btn btn-primary">Search</button>
+                    </div>
+                    <div id="searchResult" class="mt-3" style="display: none;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+function copyToClipboard() {
+    const shareLink = document.getElementById('shareLink');
+    shareLink.select();
+    navigator.clipboard.writeText(shareLink.value);
+    
+    const button = event.target;
+    const originalText = button.innerHTML;
+    button.innerHTML = 'Copied!';
+    button.classList.add('btn-success');
+    button.classList.remove('btn-outline-secondary');
+    
+    setTimeout(() => {
+        button.innerHTML = originalText;
+        button.classList.remove('btn-success');
+        button.classList.add('btn-outline-secondary');
+    }, 2000);
+}
+
+async function createNote() {
+    const content = document.getElementById('noteContent').value.trim();
+    const prefix = document.getElementById('notePrefix').value.trim();
+    const expiresIn = document.getElementById('expiresIn').value;
+    const createBtn = document.getElementById('createNoteBtn');
+    const resultDiv = document.getElementById('noteResult');
+    
+    if (!content) {
+        alert('Please enter content');
+        return;
+    }
+    
+    if (expiresIn && (parseInt(expiresIn) < 1 || parseInt(expiresIn) > 60)) {
+        alert('Expiration time must be between 1 and 60 minutes');
+        return;
+    }
+    
+    createBtn.disabled = true;
+    createBtn.innerHTML = 'Creating...';
+    
+    try {
+        const payload = { content };
+        if (prefix) {
+            payload.prefix = prefix;
+        }
+        if (expiresIn && expiresIn > 0) {
+            payload.expiresIn = parseInt(expiresIn);
+        }
+        
+        const response = await fetch('/api/notes', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload)
+        });
+        
+        const data = await response.json();
+        
+        if (data.success) {
+            const shareUrl = `${window.location.origin}/note/${data.data.noteId}`;
+            document.getElementById('shareLink').value = shareUrl;
+            resultDiv.style.display = 'block';
+            document.getElementById('noteContent').value = '';
+            document.getElementById('notePrefix').value = '';
+            document.getElementById('expiresIn').value = '';
+            
+            const expirationInfo = data.data.expiresAt ? 
+                ` (expires: ${new Date(data.data.expiresAt).toLocaleString()})` : 
+                ' (expires: 10 minutes from now)';
+            document.querySelector('#noteResult .alert-success strong').innerHTML = 
+                `Note created!${expirationInfo}`;
+        } else {
+            alert(`Error creating note: ${data.message || 'Unknown error'}`);
+        }
+    } catch (error) {
+        alert('Error creating note: ' + error.message);
+    } finally {
+        createBtn.disabled = false;
+        createBtn.innerHTML = 'Create Note';
+    }
+}
+
+async function searchNote() {
+    const searchInput = document.getElementById('searchInput').value.trim();
+    const searchBtn = document.getElementById('searchBtn');
+    const resultDiv = document.getElementById('searchResult');
+    
+    if (!searchInput) {
+        alert('Please enter a search term');
+        return;
+    }
+    
+    searchBtn.disabled = true;
+    searchBtn.innerHTML = 'Searching...';
+    
+    try {
+        const response = await fetch('/api/notes/search', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ noteId: { startsWith: searchInput } })
+        });
+        const data = await response.json();
+        
+        if (data.success) {
+            if (Array.isArray(data.data)) {
+                let html = `<div class="alert alert-success"><strong>Found ${data.data.length} notes:</strong></div>`;
+                data.data.forEach(note => {
+                    html += `
+                        <div class="card mb-2">
+                            <div class="card-body">
+                                <small class="text-muted">
+                                    Note ID: ${note.noteId}<br>
+                                    Created: ${new Date(note.createdAt).toLocaleString()}
+                                </small>
+                                <div class="mt-2">
+                                    <a href="/note/${note.noteId}" class="btn btn-sm btn-primary">View Note</a>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                });
+                resultDiv.innerHTML = html;
+            } else {
+                const note = data.data;
+                resultDiv.innerHTML = `
+                    <div class="alert alert-success">
+                        <strong>Found exact match!</strong><br>
+                        Note ID: ${note.noteId}<br>
+                        Created: ${new Date(note.createdAt).toLocaleString()}<br>
+                        <a href="${note.noteUrl}" class="btn btn-sm btn-primary mt-2">View Note</a>
+                    </div>
+                `;
+            }
+        } else {
+            resultDiv.innerHTML = `<div class="alert alert-danger">No notes found</div>`;
+        }
+        
+        resultDiv.style.display = 'block';
+    } catch (error) {
+        resultDiv.innerHTML = `<div class="alert alert-danger">Search error</div>`;
+        resultDiv.style.display = 'block';
+    } finally {
+        searchBtn.disabled = false;
+        searchBtn.innerHTML = 'Search';
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('createNoteBtn').addEventListener('click', createNote);
+    document.getElementById('searchBtn').addEventListener('click', searchNote);
+    
+    document.getElementById('noteContent').addEventListener('keypress', function(e) {
+        if (e.key === 'Enter' && e.ctrlKey) {
+            createNote();
+        }
+    });
+    
+    document.getElementById('searchInput').addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            searchNote();
+        }
+    });
+});
+</script>

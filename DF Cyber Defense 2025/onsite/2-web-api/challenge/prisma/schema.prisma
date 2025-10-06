@@ -1,0 +1,22 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../node_modules/.prisma/client"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Note {
+  id          Int      @id @default(autoincrement())
+  content     String
+  noteId      String   @unique
+  expiresAt   DateTime?
+  createdAt   DateTime @default(now()) @db.Timestamptz(6)
+  accessCount Int      @default(0)
+
+  @@map("Notes")
+}
+
+

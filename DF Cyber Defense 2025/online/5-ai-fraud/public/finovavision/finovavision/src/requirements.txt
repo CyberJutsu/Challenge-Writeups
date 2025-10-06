@@ -1,0 +1,7 @@
+flask
+Werkzeug
+Pillow
+numpy
+torch
+torchvision
+facenet-pytorch

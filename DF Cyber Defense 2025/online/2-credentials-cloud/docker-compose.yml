@@ -1,0 +1,12 @@
+services:
+  app:
+    build: .
+    image: gold-price-v1:latest
+    environment:
+      - NODE_ENV=production
+      - PORT=8080
+      - JWT_SECRET=supersecret-change-me
+      - FLAG=CTF{dev-flag}
+    ports:
+      - "80:80"
+    restart: unless-stopped

@@ -1,0 +1,2 @@
+az storage blob upload   --file crdentials-2.json   --name crdentials.json   --container-name internal   --account-name qrwebsax3zov6py --overwrite
+az storage blob upload   --file flag   --name credentials.json   --container-name internal   --account-name qrwebsax3zov6py --overwrite

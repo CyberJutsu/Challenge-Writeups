@@ -1,0 +1,120 @@
+{% extends "base.html" %}
+
+{% block title %}FinovaVision - Dashboard{% endblock %}
+
+{% block content %}
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>
+                            <i class="fas fa-money-bill-transfer me-2"></i>Fund Transfer
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <form id="transferForm">
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label for="fromAccount" class="form-label">
+                                        <i class="fas fa-user me-1"></i>From Account
+                                    </label>
+                                    <input type="text" id="fromAccount" class="form-control" readonly>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="toAccount" class="form-label">
+                                        <i class="fas fa-user-plus me-1"></i>Recipient
+                                    </label>
+                                    <select id="toAccount" class="form-select" required>
+                                        <option value="">Select recipient...</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="transferAmount" class="form-label">
+                                    <i class="fas fa-dollar-sign me-1"></i>Amount
+                                </label>
+                                <input
+                                    type="number"
+                                    id="transferAmount"
+                                    class="form-control"
+                                    min="1"
+                                    required
+                                />
+                            </div>
+                            <button type="submit" class="btn btn-success btn-lg w-100">
+                                <i class="fas fa-paper-plane me-2"></i>Send Transfer
+                            </button>
+                        </form>
+                        <div id="transferResult" class="mt-3"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>
+                            <i class="fas fa-chart-line me-2"></i>Account Overview
+                        </h4>
+                    </div>
+                    <div class="card-body">
+                        <div id="accountSummary"></div>
+                        <button id="refreshAccount" class="btn btn-outline-primary w-100 mt-3">
+                            <i class="fas fa-sync me-1"></i>Refresh Balance
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+{% endblock %}
+
+{% block scripts %}
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch('/account')
+                .then(response => {
+                    return response.json();
+                })
+                .then(data => {
+                    if (data.success) {
+                        updateAccountInfo(data);
+                        setupTransferForm(data);
+                        loadAvailableAccounts();
+                    } else {
+                        window.location.href = '/login';
+                    }
+                })
+                .catch(error => {
+                    window.location.href = '/login';
+                });
+        });
+
+        function setupTransferForm(accountData) {
+            const fromAccountInput = document.getElementById('fromAccount');
+            fromAccountInput.value = `${accountData.name} (${accountData.user_id})`;
+        }
+
+        function loadAvailableAccounts() {
+            fetch('/accounts')
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        const toAccountSelect = document.getElementById('toAccount');
+                        toAccountSelect.innerHTML = '<option value="">Select recipient...</option>';
+                        
+                        const currentUserId = document.getElementById('fromAccount').value.match(/\(([^)]+)\)/)[1];
+                        
+                        data.accounts.forEach(account => {
+                            if (account.username !== currentUserId) {
+                                const option = document.createElement('option');
+                                option.value = account.username;
+                                option.textContent = `${account.name} (${account.username})`;
+                                toAccountSelect.appendChild(option);
+                            }
+                        });
+                    }
+                })
+                .catch(error => {
+                });
+        }
+    </script>
+{% endblock %}

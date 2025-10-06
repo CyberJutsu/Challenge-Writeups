@@ -1,0 +1,5 @@
+- target: 2 folder terraform và files để deploy base infra của app
+- attacker:
+  - các file liên quan đến setup c2 server nằm [ở đây](./setup-c2/)
+  - tạo malicious image để giả lập backdoor ở folder [generate-backdoor-image](./generate-backdoor-image/)
+  - run [generate-traffic.sh](./generate-traffic.sh) để tạo apim traffic (lightweight)

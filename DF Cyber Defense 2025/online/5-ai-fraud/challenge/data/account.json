@@ -1,0 +1,72 @@
+{
+    "thangnm": {
+        "id": 1,
+        "username": "thangnm",
+        "name": "Nguyễn Minh Thắng",
+        "balance": 742,
+        "image_path": "thangnm/biometric.png"
+    },
+    "anhnt": {
+        "id": 2,
+        "username": "anhnt",
+        "name": "Nguyễn Tuấn Anh",
+        "balance": 129,
+        "image_path": "anhnt/biometric.png"
+    },
+    "minhlp": {
+        "id": 3,
+        "username": "minhlp",
+        "name": "Lê Phương Minh",
+        "balance": 658,
+        "image_path": "minhlp/biometric.png"
+    },
+    "ducvt": {
+        "id": 4,
+        "username": "ducvt",
+        "name": "Võ Trần Đức",
+        "balance": 337,
+        "image_path": "ducvt/biometric.png"
+    },
+    "hungpd": {
+        "id": 5,
+        "username": "hungpd",
+        "name": "Phạm Đình Hưng",
+        "balance": 894,
+        "image_path": "hungpd/biometric.png"
+    },
+    "linhtd": {
+        "id": 6,
+        "username": "linhtd",
+        "name": "Trần Đình Lĩnh",
+        "balance": 204,
+        "image_path": "linhtd/biometric.png"
+    },
+    "khanhbq": {
+        "id": 7,
+        "username": "khanhbq",
+        "name": "Bùi Quang Khánh",
+        "balance": 102,
+        "image_path": "khanhbq/biometric.png"
+    },
+    "minhdk": {
+        "id": 8,
+        "username": "minhdk",
+        "name": "Đinh Kim Minh",
+        "balance": 124,
+        "image_path": "minhdk/biometric.png"
+    },
+    "vanhv": {
+        "id": 9,
+        "username": "vanhv",
+        "name": "Hoàng Văn Vân",
+        "balance": 476,
+        "image_path": "vanhv/biometric.png"
+    },
+    "tungnh": {
+        "id": 10,
+        "username": "tungnh",
+        "name": "Ngô Hữu Tùng",
+        "balance": 512,
+        "image_path": "tungnh/biometric.png"
+    }
+}

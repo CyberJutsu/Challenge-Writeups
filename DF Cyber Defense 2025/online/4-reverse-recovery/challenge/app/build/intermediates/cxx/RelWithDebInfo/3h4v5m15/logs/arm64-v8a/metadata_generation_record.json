@@ -1,0 +1,44 @@
+[
+  {
+    "level_": 0,
+    "message_": "Start JSON generation. Platform version: 31 min SDK version: arm64-v8a",
+    "file_": "/Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/cpp/CMakeLists.txt",
+    "tag_": "release|arm64-v8a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 601885485
+  },
+  {
+    "level_": 0,
+    "message_": "JSON \u0027/Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/.cxx/RelWithDebInfo/3h4v5m15/arm64-v8a/android_gradle_build.json\u0027 was up-to-date",
+    "file_": "/Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/cpp/CMakeLists.txt",
+    "tag_": "release|arm64-v8a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 1503492181
+  },
+  {
+    "level_": 0,
+    "message_": "JSON generation completed without problems",
+    "file_": "/Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/cpp/CMakeLists.txt",
+    "tag_": "release|arm64-v8a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 1624243799
+  }
+]

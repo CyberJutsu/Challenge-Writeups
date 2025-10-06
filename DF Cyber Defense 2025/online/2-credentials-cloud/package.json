@@ -1,0 +1,17 @@
+{
+  "name": "gold-price-v1",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Gold Price v1.0 web challenge service",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.7"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

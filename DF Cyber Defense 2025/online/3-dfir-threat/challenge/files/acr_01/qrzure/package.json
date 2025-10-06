@@ -1,0 +1,22 @@
+{
+    "name": "payment-qr-generator",
+    "version": "1.0.0",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js",
+        "dev": "nodemon app.js"
+    },
+    "dependencies": {
+        "express": "^4.18.2",
+        "ejs": "^3.1.9",
+        "qrcode": "^1.5.3",
+        "multer": "^1.4.5-lts.1",
+        "jimp": "^0.22.10",
+        "qrcode-reader": "^1.0.4",
+        "@azure/identity": "^4.10.0",
+        "@azure/storage-blob": "^12.16.0"
+    },
+    "devDependencies": {
+        "nodemon": "^3.0.2"
+    }
+}

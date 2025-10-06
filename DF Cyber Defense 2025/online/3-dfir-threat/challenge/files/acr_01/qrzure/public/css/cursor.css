@@ -1,0 +1,23 @@
+/* Custom cursor styles using local assets */
+* {
+  cursor: url('../img/cursor.png'), auto;
+}
+
+a:hover,
+button:hover,
+input[type='submit']:hover {
+  cursor: url('../img/cursor-click.png'), auto;
+}
+
+/* Fallback to web cursors if local images not found */
+@supports not (cursor: url('../img/cursor.png')) {
+  * {
+    cursor: url('https://unpkg.com/nes.css@2.3.0/assets/cursor.png'), auto;
+  }
+
+  a:hover,
+  button:hover,
+  input[type='submit']:hover {
+    cursor: url('https://unpkg.com/nes.css@2.3.0/assets/cursor-click.png'), auto;
+  }
+}

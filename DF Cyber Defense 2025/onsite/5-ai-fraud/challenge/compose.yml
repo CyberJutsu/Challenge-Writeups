@@ -1,0 +1,65 @@
+name: nextgen-waif
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ai-fraud-app
+    env_file:
+      - .env
+    environment:
+      # App config
+      - PYTHONUNBUFFERED=1
+      - FLASK_DEBUG=0
+      - DB_PATH=/data/db.sqlite3
+
+      # Gunicorn config (referenced from your prior setup)
+      - GUNICORN_WORKERS=4
+      - GUNICORN_CLASS=gthread
+      - GUNICORN_THREADS=4
+      - GUNICORN_TIMEOUT=120
+      - GUNICORN_KEEPALIVE=5
+      - GUNICORN_MAX_REQUESTS=1000
+      - GUNICORN_MAX_REQUESTS_JITTER=100
+      - GUNICORN_BIND=0.0.0.0:8000
+      - RATE_LIMIT_MIN_INTERVAL=0
+      - RATE_LIMIT_MAX_REQUESTS=1000
+      - RATE_LIMIT_WINDOW_SECONDS=600
+      # Redis for shared cache/ratelimit
+      - REDIS_URL=redis://redis:6379/0
+
+      # Optional AI redactor behavior
+      # - AI_FILTER_ENABLED=true
+      # AI cache tuning (optional)
+      - AI_FILTER_CACHE_SIZE=512
+      - AI_FILTER_CACHE_TTL=600
+      - AI_FILTER_CACHE_MAX_BODY=131072
+      - AI_FILTER_LOG_REQUESTS=true
+      - AI_FILTER_MODEL=meta-llama/llama-3.1-8b-instruct
+      - LOG_LEVEL=DEBUG
+      - FLAG=DF25{we_will_become_cyborg_in_AI_era}
+    ports:
+      - "127.0.0.1:18111:8000" # 8111
+    volumes:
+      - db_data:/data
+    restart: unless-stopped
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "curl -fsS http://127.0.0.1:8000/health >/dev/null || exit 1",
+        ]
+      interval: 5s
+      timeout: 3s
+      retries: 30
+
+  redis:
+    image: redis:7-alpine
+    container_name: ai-fraud-redis
+    expose:
+      - "6379"
+    command: ["redis-server", "--save", "", "--appendonly", "no"]
+    restart: unless-stopped
+
+volumes:
+  db_data: {}

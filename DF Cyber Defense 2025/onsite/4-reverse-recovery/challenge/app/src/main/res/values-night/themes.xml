@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Pixel Blue Dark Theme for Pixel Blackout -->
+    <style name="Theme.PixelBlackout" parent="Theme.MaterialComponents.DayNight">
+        <!-- Primary colors - slightly brighter for dark mode -->
+        <item name="colorPrimary">@color/pixel_blue_secondary</item>
+        <item name="colorOnPrimary">@color/pixel_on_secondary</item>
+        <item name="colorPrimaryContainer">@color/pixel_blue_primary</item>
+        <item name="colorOnPrimaryContainer">@color/pixel_on_primary</item>
+        
+        <!-- Secondary colors -->
+        <item name="colorSecondary">@color/pixel_accent</item>
+        <item name="colorOnSecondary">@color/pixel_on_secondary</item>
+        <item name="colorSecondaryContainer">@color/pixel_accent_variant</item>
+        <item name="colorOnSecondaryContainer">@color/pixel_on_primary</item>
+        
+        <!-- Background colors - deeper for night mode -->
+        <item name="android:colorBackground">@color/pixel_background</item>
+        <item name="colorOnBackground">@color/pixel_on_background</item>
+        <item name="colorSurface">@color/pixel_surface</item>
+        <item name="colorOnSurface">@color/pixel_on_surface</item>
+        <item name="colorSurfaceVariant">@color/pixel_surface_variant</item>
+        
+        <!-- Accent and status bar -->
+        <item name="colorAccent">@color/pixel_accent</item>
+        <item name="android:statusBarColor">@color/pixel_background</item>
+        <item name="android:navigationBarColor">@color/pixel_background</item>
+        <item name="android:windowLightStatusBar">false</item>
+        
+        <!-- Error colors -->
+        <item name="colorError">@color/pixel_error</item>
+        <item name="colorOnError">@color/white</item>
+    </style>
+
+    <!-- Legacy theme for compatibility -->
+    <style name="AppTheme" parent="Theme.PixelBlackout" />
+</resources>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Pixel Blackout</string>
+    <string name="stealth_service_description">Silent capture of UI text</string>
+</resources>

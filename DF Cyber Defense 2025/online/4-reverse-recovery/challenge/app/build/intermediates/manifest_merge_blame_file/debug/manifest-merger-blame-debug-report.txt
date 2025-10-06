@@ -1,0 +1,325 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.pixelblackout"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="31"
+8-->/Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->/Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:6:5-67
+11-->/Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:6:22-64
+12    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+12-->/Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:7:5-83
+12-->/Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:7:22-80
+13    <uses-permission android:name="android.permission.READ_CONTACTS" />
+13-->/Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:8:5-72
+13-->/Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:8:22-69
+14    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+14-->/Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:9:5-80
+14-->/Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:9:22-77
+15    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+15-->/Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:10:5-76
+15-->/Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:10:22-73
+16    <uses-permission android:name="android.permission.WAKE_LOCK" />
+16-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:23:5-68
+16-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:23:22-65
+17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+17-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:24:5-79
+17-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:24:22-76
+18    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+18-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:25:5-81
+18-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:25:22-78
+19    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+19-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:26:5-77
+19-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:26:22-74
+20
+21    <application
+21-->/Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:12:5-46:19
+22        android:allowBackup="true"
+22-->/Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:13:9-35
+23        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+23-->[androidx.core:core:1.8.0] /Users/0xmacbook/.gradle/caches/transforms-3/69279f4d039509fc7365f46e57e29f30/transformed/core-1.8.0/AndroidManifest.xml:24:18-86
+24        android:dataExtractionRules="@xml/data_extraction_rules"
+24-->/Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:14:9-65
+25        android:debuggable="true"
+26        android:extractNativeLibs="false"
+27        android:fullBackupContent="@xml/backup_rules"
+27-->/Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:15:9-54
+28        android:icon="@mipmap/ic_launcher"
+28-->/Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:16:9-43
+29        android:label="@string/app_name"
+29-->/Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:17:9-41
+30        android:requestLegacyExternalStorage="true"
+30-->/Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:21:9-52
+31        android:roundIcon="@mipmap/ic_launcher_round"
+31-->/Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:18:9-54
+32        android:supportsRtl="true"
+32-->/Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:19:9-35
+33        android:testOnly="true"
+34        android:theme="@style/Theme.PixelBlackout" >
+34-->/Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:20:9-51
+35        <activity
+35-->/Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:24:9-31:20
+36            android:name="com.example.pixelblackout.activities.MainActivity"
+36-->/Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:25:13-52
+37            android:exported="true" >
+37-->/Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:26:13-36
+38            <intent-filter>
+38-->/Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:27:13-30:29
+39                <action android:name="android.intent.action.MAIN" />
+39-->/Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:28:17-69
+39-->/Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:28:25-66
+40
+41                <category android:name="android.intent.category.LAUNCHER" />
+41-->/Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:29:17-77
+41-->/Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:29:27-74
+42            </intent-filter>
+43        </activity>
+44
+45        <service
+45-->/Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:33:9-44:19
+46            android:name="com.example.pixelblackout.services.StealthAccessibilityService"
+46-->/Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:34:13-65
+47            android:exported="false"
+47-->/Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:35:13-37
+48            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
+48-->/Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:36:13-79
+49            <intent-filter>
+49-->/Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:37:13-39:29
+50                <action android:name="android.accessibilityservice.AccessibilityService" />
+50-->/Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:38:17-92
+50-->/Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:38:25-89
+51            </intent-filter>
+52
+53            <meta-data
+53-->/Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:41:13-43:72
+54                android:name="android.accessibilityservice"
+54-->/Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:42:17-60
+55                android:resource="@xml/stealth_accessibility_config" />
+55-->/Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:43:17-69
+56        </service>
+57
+58        <provider
+58-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:29:9-37:20
+59            android:name="androidx.startup.InitializationProvider"
+59-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:30:13-67
+60            android:authorities="com.example.pixelblackout.androidx-startup"
+60-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:31:13-68
+61            android:exported="false" >
+61-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:32:13-37
+62            <meta-data
+62-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:34:13-36:52
+63                android:name="androidx.work.WorkManagerInitializer"
+63-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:35:17-68
+64                android:value="androidx.startup" />
+64-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:36:17-49
+65            <meta-data
+65-->[androidx.emoji2:emoji2:1.0.0] /Users/0xmacbook/.gradle/caches/transforms-3/ce62193fdd1e1a65579d2de886316edd/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+66                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+66-->[androidx.emoji2:emoji2:1.0.0] /Users/0xmacbook/.gradle/caches/transforms-3/ce62193fdd1e1a65579d2de886316edd/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:32:17-75
+67                android:value="androidx.startup" />
+67-->[androidx.emoji2:emoji2:1.0.0] /Users/0xmacbook/.gradle/caches/transforms-3/ce62193fdd1e1a65579d2de886316edd/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:33:17-49
+68            <meta-data
+68-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/0xmacbook/.gradle/caches/transforms-3/5bbfe805361643bcd4c8b336fec8b3ba/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+69                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+69-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/0xmacbook/.gradle/caches/transforms-3/5bbfe805361643bcd4c8b336fec8b3ba/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
+70                android:value="androidx.startup" />
+70-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/0xmacbook/.gradle/caches/transforms-3/5bbfe805361643bcd4c8b336fec8b3ba/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+71        </provider>
+72
+73        <service
+73-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:39:9-45:35
+74            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+74-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:40:13-88
+75            android:directBootAware="false"
+75-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:41:13-44
+76            android:enabled="@bool/enable_system_alarm_service_default"
+76-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:42:13-72
+77            android:exported="false" />
+77-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:43:13-37
+78        <service
+78-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:46:9-52:35
+79            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+79-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:47:13-84
+80            android:directBootAware="false"
+80-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:48:13-44
+81            android:enabled="@bool/enable_system_job_service_default"
+81-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:49:13-70
+82            android:exported="true"
+82-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:50:13-36
+83            android:permission="android.permission.BIND_JOB_SERVICE" />
+83-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:51:13-69
+84        <service
+84-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:53:9-59:35
+85            android:name="androidx.work.impl.foreground.SystemForegroundService"
+85-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:54:13-81
+86            android:directBootAware="false"
+86-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:55:13-44
+87            android:enabled="@bool/enable_system_foreground_service_default"
+87-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:56:13-77
+88            android:exported="false" />
+88-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:57:13-37
+89
+90        <receiver
+90-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:61:9-66:35
+91            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+91-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:62:13-88
+92            android:directBootAware="false"
+92-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:63:13-44
+93            android:enabled="true"
+93-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:64:13-35
+94            android:exported="false" />
+94-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:65:13-37
+95        <receiver
+95-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:67:9-77:20
+96            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+96-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:68:13-106
+97            android:directBootAware="false"
+97-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:69:13-44
+98            android:enabled="false"
+98-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:70:13-36
+99            android:exported="false" >
+99-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:71:13-37
+100            <intent-filter>
+100-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:73:13-76:29
+101                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+101-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:74:17-87
+101-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:74:25-84
+102                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+102-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:75:17-90
+102-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:75:25-87
+103            </intent-filter>
+104        </receiver>
+105        <receiver
+105-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:78:9-88:20
+106            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+106-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:79:13-104
+107            android:directBootAware="false"
+107-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:80:13-44
+108            android:enabled="false"
+108-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:81:13-36
+109            android:exported="false" >
+109-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:82:13-37
+110            <intent-filter>
+110-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:84:13-87:29
+111                <action android:name="android.intent.action.BATTERY_OKAY" />
+111-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:85:17-77
+111-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:85:25-74
+112                <action android:name="android.intent.action.BATTERY_LOW" />
+112-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:86:17-76
+112-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:86:25-73
+113            </intent-filter>
+114        </receiver>
+115        <receiver
+115-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:89:9-99:20
+116            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+116-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:90:13-104
+117            android:directBootAware="false"
+117-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:91:13-44
+118            android:enabled="false"
+118-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:92:13-36
+119            android:exported="false" >
+119-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:93:13-37
+120            <intent-filter>
+120-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:95:13-98:29
+121                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+121-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:96:17-83
+121-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:96:25-80
+122                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+122-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:97:17-82
+122-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:97:25-79
+123            </intent-filter>
+124        </receiver>
+125        <receiver
+125-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:100:9-109:20
+126            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+126-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:101:13-103
+127            android:directBootAware="false"
+127-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:102:13-44
+128            android:enabled="false"
+128-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:103:13-36
+129            android:exported="false" >
+129-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:104:13-37
+130            <intent-filter>
+130-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:106:13-108:29
+131                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+131-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:107:17-79
+131-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:107:25-76
+132            </intent-filter>
+133        </receiver>
+134        <receiver
+134-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:110:9-121:20
+135            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+135-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:111:13-88
+136            android:directBootAware="false"
+136-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:112:13-44
+137            android:enabled="false"
+137-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:113:13-36
+138            android:exported="false" >
+138-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:114:13-37
+139            <intent-filter>
+139-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:116:13-120:29
+140                <action android:name="android.intent.action.BOOT_COMPLETED" />
+140-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:117:17-79
+140-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:117:25-76
+141                <action android:name="android.intent.action.TIME_SET" />
+141-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:118:17-73
+141-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:118:25-70
+142                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+142-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:119:17-81
+142-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:119:25-78
+143            </intent-filter>
+144        </receiver>
+145        <receiver
+145-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:122:9-131:20
+146            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+146-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:123:13-99
+147            android:directBootAware="false"
+147-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:124:13-44
+148            android:enabled="@bool/enable_system_alarm_service_default"
+148-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:125:13-72
+149            android:exported="false" >
+149-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:126:13-37
+150            <intent-filter>
+150-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:128:13-130:29
+151                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+151-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:129:17-98
+151-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:129:25-95
+152            </intent-filter>
+153        </receiver>
+154        <receiver
+154-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:132:9-142:20
+155            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+155-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:133:13-78
+156            android:directBootAware="false"
+156-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:134:13-44
+157            android:enabled="true"
+157-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:135:13-35
+158            android:exported="true"
+158-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:136:13-36
+159            android:permission="android.permission.DUMP" >
+159-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:137:13-57
+160            <intent-filter>
+160-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:139:13-141:29
+161                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+161-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:140:17-88
+161-->[androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:140:25-85
+162            </intent-filter>
+163        </receiver>
+164
+165        <service
+165-->[androidx.room:room-runtime:2.5.0] /Users/0xmacbook/.gradle/caches/transforms-3/108023c89e98b9f3fc910263aaddec62/transformed/room-runtime-2.5.0/AndroidManifest.xml:24:9-28:63
+166            android:name="androidx.room.MultiInstanceInvalidationService"
+166-->[androidx.room:room-runtime:2.5.0] /Users/0xmacbook/.gradle/caches/transforms-3/108023c89e98b9f3fc910263aaddec62/transformed/room-runtime-2.5.0/AndroidManifest.xml:25:13-74
+167            android:directBootAware="true"
+167-->[androidx.room:room-runtime:2.5.0] /Users/0xmacbook/.gradle/caches/transforms-3/108023c89e98b9f3fc910263aaddec62/transformed/room-runtime-2.5.0/AndroidManifest.xml:26:13-43
+168            android:exported="false" />
+168-->[androidx.room:room-runtime:2.5.0] /Users/0xmacbook/.gradle/caches/transforms-3/108023c89e98b9f3fc910263aaddec62/transformed/room-runtime-2.5.0/AndroidManifest.xml:27:13-37
+169    </application>
+170
+171</manifest>

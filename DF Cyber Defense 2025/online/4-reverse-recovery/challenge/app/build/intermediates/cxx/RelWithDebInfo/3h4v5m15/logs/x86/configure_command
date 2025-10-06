@@ -1,0 +1,18 @@
+/Users/0xmacbook/Library/Android/sdk/cmake/3.22.1/bin/cmake \
+  -H/Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/cpp \
+  -DCMAKE_SYSTEM_NAME=Android \
+  -DCMAKE_EXPORT_COMPILE_COMMANDS=ON \
+  -DCMAKE_SYSTEM_VERSION=31 \
+  -DANDROID_PLATFORM=android-31 \
+  -DANDROID_ABI=x86 \
+  -DCMAKE_ANDROID_ARCH_ABI=x86 \
+  -DANDROID_NDK=/Users/0xmacbook/Library/Android/sdk/ndk/23.1.7779620 \
+  -DCMAKE_ANDROID_NDK=/Users/0xmacbook/Library/Android/sdk/ndk/23.1.7779620 \
+  -DCMAKE_TOOLCHAIN_FILE=/Users/0xmacbook/Library/Android/sdk/ndk/23.1.7779620/build/cmake/android.toolchain.cmake \
+  -DCMAKE_MAKE_PROGRAM=/Users/0xmacbook/Library/Android/sdk/cmake/3.22.1/bin/ninja \
+  -DCMAKE_CXX_FLAGS=-std=c++17 \
+  -DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/build/intermediates/cxx/RelWithDebInfo/3h4v5m15/obj/x86 \
+  -DCMAKE_RUNTIME_OUTPUT_DIRECTORY=/Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/build/intermediates/cxx/RelWithDebInfo/3h4v5m15/obj/x86 \
+  -DCMAKE_BUILD_TYPE=RelWithDebInfo \
+  -B/Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/.cxx/RelWithDebInfo/3h4v5m15/x86 \
+  -GNinja

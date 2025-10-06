@@ -1,0 +1,11 @@
+services:
+    finovavision:
+        build: .
+        ports:
+            - "10001:10001"
+        environment:
+            - FLASK_APP=app.py
+            - FLASK_RUN_HOST=0.0.0.0
+            - FLASK_RUN_PORT=10001
+            - FLAG=DF25{FAKE_FLAG_FAKE_FLAG}
+        restart: unless-stopped

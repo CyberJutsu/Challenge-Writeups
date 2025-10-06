@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css?v=1.1">
+</head>
+
+<body>
+    <div class="navbar">
+        QRzure
+    </div>
+
+    <div class="container">
+        <!-- Tab Navigation -->
+        <div class="tab-nav">
+            <button class="tab-button <%= activeTab === 'generate' ? 'active' : '' %>" onclick="switchTab('generate')">Generate QR</button>
+            <button class="tab-button <%= activeTab === 'scan' ? 'active' : '' %>" onclick="switchTab('scan')">Scan QR</button>
+        </div>
+
+        <!-- Generate Tab -->
+        <div id="generate-tab" class="tab-content <%= activeTab === 'generate' ? 'active' : '' %>">
+            <h2>Generate Payment QR Code</h2>
+            <div class="generate-method-single">
+                <div class="form-qr-row">
+                    <form id="generateForm">
+                        <div class="form-group">
+                            <label for="amount">Amount</label>
+                            <input type="number" class="form-control" id="amount" name="amount" required value="<%= paymentData ? paymentData.amount : '' %>">
+                        </div>
+                        <div class="form-group">
+                            <label for="recipient">Recipient</label>
+                            <input type="text" class="form-control" id="recipient" name="recipient" required value="<%= paymentData ? paymentData.recipient : '' %>">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message (Optional)</label>
+                            <textarea class="form-control" id="message" name="message" rows="2" maxlength="60"><%= paymentData ? paymentData.message : '' %></textarea>
+                        </div>
+                    </form>
+                    <div class="qr-preview">
+                        <% if (qrData) { %>
+                            <img id="qrImage" src="<%= qrData %>" alt="Generated QR Code">
+                        <% } else { %>
+                            <img id="qrImage" src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=Example" alt="QR Placeholder">
+                        <% } %>
+                    </div>
+                </div>
+                <button type="submit" form="generateForm" class="btn btn-big">Generate QR Code</button>
+            </div>
+
+            <!-- Results -->
+            <div id="generate-result" class="card result-card" style="<%= qrData ? 'display: block;' : 'display: none;' %>">
+                <h3 class="result-title">Payment QR Code Generated</h3>
+                <div class="payment-details">
+                    <% if (paymentData) { %>
+                        <div class="detail-item">
+                            <span class="detail-label">Amount:</span>
+                            <span class="detail-value"><%= paymentData.amount %></span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Recipient:</span>
+                            <span class="detail-value"><%= paymentData.recipient %></span>
+                        </div>
+                        <% if (paymentData.message) { %>
+                            <div class="detail-item">
+                                <span class="detail-label">Message:</span>
+                                <span class="detail-value"><%= paymentData.message %></span>
+                            </div>
+                        <% } %>
+                        <div class="detail-item">
+                            <span class="detail-label">Timestamp:</span>
+                            <span class="detail-value"><%= paymentData.timestamp %></span>
+                        </div>
+                    <% } %>
+                </div>
+            </div>
+            
+            <% if (error) { %>
+                <div class="alert alert-danger">
+                    <%= error %>
+                </div>
+            <% } %>
+        </div>
+
+        <!-- Scan Tab -->
+        <div id="scan-tab" class="tab-content <%= activeTab === 'scan' ? 'active' : '' %>">
+            <h2>Scan QR Code</h2>
+
+            <!-- Sub-tab Navigation for Scan Methods -->
+            <div class="scan-tab-nav">
+                <button class="scan-tab-button active" onclick="switchScanTab('upload')">Upload Image</button>
+                <button class="scan-tab-button" onclick="switchScanTab('url')">From URL</button>
+            </div>
+
+            <!-- Upload Method Tab -->
+            <div id="scan-upload-tab" class="scan-tab-content active">
+                <div class="scan-method-single">
+                    <form id="scanForm">
+                        <label for="qrimage">Choose QR Code Image</label>
+                        <input hidden="true" type="file" class="form-control" id="qrimage" name="qrimage" accept="image/*">
+                        <div class="file-drop-zone" id="dropZone">
+                            <p>Drop your QR code image here or click to browse</p>
+                        </div>
+                    </form>
+                    <button type="submit" form="scanForm" class="btn btn-big">Scan QR Code</button>
+                </div>
+            </div>
+
+            <!-- URL Method Tab -->
+            <div id="scan-url-tab" class="scan-tab-content">
+                <div class="scan-method-single">
+                    <form id="scanUrlForm">
+                        <label for="imageUrl">QR Code Image URL</label>
+                        <input type="url" class="form-control" id="imageUrl" name="imageUrl" placeholder="https://example.com/qrcode.png">
+                        <div class="url-preview" id="urlPreview" style="display: none;">
+                            <img id="urlPreviewImg" alt="URL Preview" />
+                        </div>
+                    </form>
+                    <button type="submit" form="scanUrlForm" class="btn btn-big">Scan from URL</button>
+                </div>
+            </div>
+
+            <!-- Scan Results -->
+            <div id="scan-result" class="card result-card" style="<%= scanQrData ? 'display: block;' : 'display: none;' %>">
+                <h3 class="result-title">QR Code Scanned Successfully</h3>
+                <div class="payment-details">
+                    <% if (scanQrData) { %>
+                        <% if (scanMessage) { %>
+                            <div class="rendered-message"><%- scanMessage %></div>
+                        <% } %>
+                    <% } %>
+                </div>
+            </div>
+            
+            <% if (scanError) { %>
+                <div class="alert alert-danger">
+                    <%= scanError %>
+                </div>
+            <% } %>
+        </div>
+    </div>
+
+    <!-- Loading indicator -->
+    <div id="loading" class="loading" style="display: none;">
+        <div class="loading-text">Processing...</div>
+    </div>
+
+    <!-- Toast notifications -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <script src="js/config.js?v=1.1"></script>
+    <script src="js/ui-tabs.js?v=1.1"></script>
+    <script src="js/main.js?v=1.1"></script>
+</body>
+
+<script>
+    // Background decoration script
+    let imgSrc = 'data:image/png;base64,';
+    imgSrc += 'iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAAAAAAAAQCEeRdzAAAAAXNSR0IB2cksfwAAACBjSFJN';
+    imgSrc += 'AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABGdBTUEAALGPC/xhBQAABXhJREFUeJzdV2tMU2cYPuc7vYhA';
+    imgSrc += 'KRQQQm/Axri0xakTNaADuU3BxCLSlotOs42xublNpzLAzWRO5yUiQyeL2SVGI1pTHZdScGPgmJeICEwBdYlOTTaWmJhwG8K775ye';
+    imgSrc += '2rsyZT/mSZ70/OjX53mf73nf7ytBPMMPOem/iKJzN3qkbtorKdu/R1K6zwnikn17pFsOlgcsXamddHLSw8+fWHzolueGblB0Aih6';
+    imgSrc += 'AZQ9ZtDvFqhuAoR9aTQgHo+aVAEorfIsoWkcI3KM4F18ARRdANGX7BHTjkF/dsGIeHPV/kkj54TMTifV+j8JXRMQ2fXAe70ZQg39';
+    imgSrc += 'oOjAVV9iSTEU7WaorgBEHLlwzjt6xotPTU4niVpc1UXk/giEpsGMrDrwer8NYrvxFlxyjenXAML3njz11AKQPDELLT16m9A2WQUs';
+    imgSrc += 'NwKfdkH/Bygu4+pZJ2hiBQsVFhdpuNrpG5+a8HQC0isvEnk/WcktUNcyWYi9ytrv6ALeiljsQkT5ie+emJwKT1+J1Mfu2lVv4wKd';
+    imgSrc += 'BdmRO0xX2LpgcUKJgxpT91u3X4o648kEJG4zEvmtzuQPXagHQVknqLqs1jtCdQMgdOuhA/+ePEq9Bqmr7xDaRtfkuh+AWFh50a/g';
+    imgSrc += '05106i3dwHx22IBu16a710Rp2csmTE4nHy3c3kTkt7itnsRdQcZ9VC1KVadNvwJjllZk7LcVwLogKa74YsICkKqgjNSaBgmNybUA';
+    imgSrc += 'TE4tqupEHgFBFJeLggtLS5S97BxwdIAG7hTlhZF7gepVrz7eer6nBzV/82Eiz131JsDi/uYmlB21rBEuyMhUnRvoV7AVOwnAUPYB';
+    imgSrc += 'yIsrdnH4/EePaN7sop1kXvMDt8HD1aPMb3oQd+oU23VBmrdW0W2nsIzlDnYrbLIxvQdGA3LeXO3eeq8gMXfhZzVEbrMNqdG++py6';
+    imgSrc += 'IWrO+q8c1/rEJSVEN96+TtttORtshxOTDzwzJJ8crOT5BYoc1zNnN5pVtIssOONQNStgWR3u/UYg0w70uisgeMXaQlWftWKFY1fg';
+    imgSrc += '91gcyICct99gaa13BuT/wiw89c4w7eWYeG0DeJd2gWBLD/hsavtLmL1xkzBr3Tph1vr1Fvgsefcd8daa76PO2R9QTvgVH9f7jIYp';
+    imgSrc += '0nC5XfUcVd7H5IpfnPc8BwvQNYD/zhsgMwyD/NQoyGsBZCzkLOh3yYkHEFY/DEqbbbAQW4/tcaYtRZn5Omv1Ilx9WkUboTvtJvl4';
+    imgSrc += 'G7JrQVDaDVLDOEj1QyA9PuiMY4MgPzkEka2jDqT2oLPg+4om2yogRvMhsfK8Q+Cc249YXjfmX1T1tdww4laEpHqAcUFx+RECrgP4';
+    imgSrc += 'Lc61XtuQeF4GWnrkutuxy+TANM6Zv0XPC5CLQz5vaZXVgGsR2IXQmmGIOj/mkjwGH1yRDbf6vF9aEG+XYEqh20AW/OxagNYESNc4';
+    imgSrc += 'hnzEYiYvvtMCg0v0BjktwqULg4wLdPLtBLSb9z8w7701Ti1EegWFUCm7TM4TEPd+7mmgopatwWOS+1Awh4sCVu/YTgfQllx2fMgs';
+    imgSrc += 'wGgVwOSBHtO4RWU7qr/lTxMHu54Dock6fPu5aRdG/I5SdreQfG8/x0VTZNHRIbvPtskMD1w6wExC9p5IX2IjTb/3CeYmv+w0A2wf';
+    imgSrc += 'jiq/jNQ1DTGXEAy0/OQ9JIqY4fLL+PGMjJspP9zfLz0xYifiucYR8yBqN49kVQcMBGqLitz9jp0VVNzaClJjvI809fepsFTN49YI';
+    imgSrc += '5izJlOkHhqT6YYY83DRidwbg++Go5IPt2yb8V4nkeQlIr2khDCgefyJrhIsKX5PXAa58nLmKKbvNoEdveLnhMOJw0ET5n+jhCES+';
+    imgSrc += 'njOSk7xnJiUJ56Uk+sw1QxifnjQ1LOr5/5T8f/38A80eAEej+m1pAAAAAElFTkSuQmCC';
+
+    const count = 128;
+    for (let i = 0; i < count; i++) {
+        const img = document.createElement('img');
+        img.src = imgSrc;
+        img.style.position = 'fixed';
+        img.style.zIndex = '-1';
+        img.style.width = (32 + Math.random() * 60) + 'px';
+        img.style.left = (Math.random() * 100) + 'vw';
+        img.style.top = (Math.random() * 100) + 'vh';
+        img.style.opacity = 0.15 + Math.random() * 0.2;
+        document.body.appendChild(img);
+    }
+</script>
+
+</html>

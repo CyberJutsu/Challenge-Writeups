@@ -1,0 +1,244 @@
+{% extends "base.html" %} {% block title %}FinovaVision{% endblock %} {% block
+content %}
+
+<!-- Landing Page -->
+<div id="landingSection" class="row justify-content-center">
+	<div class="col-lg-10 col-xl-8">
+		<div class="hero-section text-center p-5 mb-5">
+			<div class="mb-4">
+				<i class="fas fa-landmark fa-4x mb-3"></i>
+				<h1 class="display-4 fw-bold mb-3">FinovaVision</h1>
+				<p class="lead mb-4">
+					Advanced digital banking platform with AI-powered security
+					and biometric authentication
+				</p>
+			</div>
+			<div class="row text-center mb-4">
+				<div class="col-md-4 mb-3">
+					<div class="card h-100">
+						<div class="card-body">
+							<i class="fas fa-shield-alt fa-2x mb-3"></i>
+							<h5 class="fw-bold">Biometric Security</h5>
+							<p class="mb-0">
+								Advanced facial recognition for secure account
+								access
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 mb-3">
+					<div class="card h-100">
+						<div class="card-body">
+							<i class="fas fa-brain fa-2x mb-3"></i>
+							<h5 class="fw-bold">Smart Banking</h5>
+							<p class="mb-0">
+								AI-driven fraud detection and risk management
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 mb-3">
+					<div class="card h-100">
+						<div class="card-body">
+							<i
+								class="fas fa-money-bill-transfer fa-2x mb-3"
+							></i>
+							<h5 class="fw-bold">Digital Transfers</h5>
+							<p class="mb-0">
+								Instant secure payments with biometric
+								authentication
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<button id="getStartedBtn" class="btn btn-primary btn-lg px-5 py-3">
+				<i class="fas fa-sign-in-alt me-2"></i>Access Your Account
+			</button>
+		</div>
+	</div>
+</div>
+
+<!-- Login Section -->
+<div id="loginSection" class="row justify-content-center mb-5 d-none">
+	<div class="col-lg-8 col-xl-6">
+		<div class="card">
+			<div class="card-header text-center">
+				<h2>
+					<i class="fas fa-user-shield me-2"></i>Secure Account Access
+				</h2>
+				<p class="mb-0">
+					<i class="fas fa-camera me-1"></i>Biometric verification
+					required for account security
+				</p>
+			</div>
+			<div class="card-body">
+				<div
+					class="video-container text-center mb-4"
+					style="max-width: 400px; margin: 0 auto"
+				>
+					<video
+						id="loginVideo"
+						width="400"
+						height="300"
+						autoplay
+						muted
+						style="display: none"
+					></video>
+					<canvas
+						id="loginCanvas"
+						width="400"
+						height="300"
+						style="display: none"
+					></canvas>
+					<div
+						id="loginPreview"
+						class="text-center p-4"
+						style="
+							min-height: 300px;
+							background: #f8f9fa;
+							border: 2px dashed #000;
+						"
+					>
+						<i
+							class="fas fa-camera fa-3x mb-3"
+							style="color: #666"
+						></i>
+						<p class="mb-0">
+							Click "Start Camera" to begin identity verification
+						</p>
+					</div>
+				</div>
+				<div class="camera-controls p-3 text-center mb-3">
+					<button
+						id="startLoginCamera"
+						class="btn btn-outline-primary me-2"
+					>
+						<i class="fas fa-video me-1"></i>Start Camera
+					</button>
+					<button
+						id="captureLoginPhoto"
+						class="btn btn-success me-2"
+						style="display: none"
+					>
+						<i class="fas fa-camera me-1"></i>Capture Photo
+					</button>
+					<button
+						id="retakeLoginPhoto"
+						class="btn btn-warning"
+						style="display: none"
+					>
+						<i class="fas fa-redo me-1"></i>Retake
+					</button>
+				</div>
+				<form id="loginForm">
+					<button
+						type="submit"
+						class="btn btn-primary btn-lg w-100"
+						disabled
+					>
+						<i class="fas fa-sign-in-alt me-2"></i>Access Account
+					</button>
+				</form>
+				<div id="loginResult" class="mt-4"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Banking Dashboard (Hidden initially) -->
+<div id="bankingSection" class="d-none">
+
+	<div class="row">
+		<div class="col-lg-8">
+			<div class="card">
+				<div class="card-header">
+					<h3>
+						<i class="fas fa-money-bill-transfer me-2"></i>Fund
+						Transfer
+					</h3>
+				</div>
+				<div class="card-body">
+					<form id="transferForm">
+						<div class="row mb-3">
+							<div class="col-md-6">
+								<label for="fromAccount" class="form-label"
+									><i class="fas fa-user me-1"></i>From
+									Account</label
+								>
+								<select
+									id="fromAccount"
+									class="form-select"
+									required
+								>
+									<option value="alice">
+										Alice Johnson - Checking ****1234
+									</option>
+								</select>
+							</div>
+							<div class="col-md-6">
+								<label for="toAccount" class="form-label"
+									><i class="fas fa-user-plus me-1"></i
+									>Recipient</label
+								>
+								<select
+									id="toAccount"
+									class="form-select"
+									required
+								>
+									<option value="alice">
+										Alice Johnson - Savings ****5678
+									</option>
+									<option value="finova-vault">
+										John Smith - External Account
+									</option>
+								</select>
+							</div>
+						</div>
+						<div class="mb-3">
+							<label for="transferAmount" class="form-label"
+								><i class="fas fa-dollar-sign me-1"></i>Amount
+								($)</label
+							>
+							<input
+								type="number"
+								id="transferAmount"
+								class="form-control"
+								min="1"
+								required
+							/>
+						</div>
+						<button
+							type="submit"
+							class="btn btn-success btn-lg w-100"
+						>
+							<i class="fas fa-paper-plane me-2"></i>Send Transfer
+						</button>
+					</form>
+					<div id="transferResult" class="mt-4"></div>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-4">
+			<div class="card">
+				<div class="card-header">
+					<h4>
+						<i class="fas fa-chart-line me-2"></i>Account Overview
+					</h4>
+				</div>
+				<div class="card-body">
+					<div id="accountSummary"></div>
+					<button
+						id="refreshAccount"
+						class="btn btn-outline-primary w-100 mt-3"
+					>
+						<i class="fas fa-sync me-1"></i>Refresh Balance
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %} {% block scripts %}
+<script src="{{ url_for('static', filename='app.js') }}"></script>
+{% endblock %}

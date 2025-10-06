@@ -1,0 +1,7 @@
+facenet-pytorch
+torch
+torchvision
+scikit-learn
+Pillow
+numpy
+requests

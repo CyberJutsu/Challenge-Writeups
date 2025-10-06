@@ -1,0 +1,13 @@
+# Exclude agent installer and heavy/unneeded files from build context
+TMServerAgent_Linux_auto_x86_64_DangMN_PI/
+logs/
+node_modules/
+.git/
+.DS_Store
+*.log
+# Terraform caches and state
+.terraform/
+**/.terraform/**
+infra/**/.terraform/**
+infra/aws/terraform.tfstate*
+infra/aws/errored.tfstate

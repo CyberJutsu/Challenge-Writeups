@@ -1,0 +1,24 @@
+server {
+        listen 80;
+        server_name _;
+        root /var/www/html;
+        index index.html;
+ 	
+	access_log /var/log/nginx/80-access.log;
+	error_log /var/log/nginx/80-error.log;
+
+	location /.htpasswd {
+		return 404;
+	}
+	location /aa {
+		alias /opt/setup/payloads/;
+		autoindex on;
+	}
+	location /uploads {
+		auth_basic "Restricted Access";
+		auth_basic_user_file /opt/setup/nginx/.htpasswd;
+		autoindex on;
+		alias /opt/setup/uploads/;
+        }
+}
+

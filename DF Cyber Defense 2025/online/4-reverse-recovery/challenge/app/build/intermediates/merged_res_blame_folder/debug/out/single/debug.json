@@ -1,0 +1,146 @@
+[
+    {
+        "merged": "/Users/0xmacbook/.gradle/daemon/8.5/com.example.pixelblackout.app-merged_res-37:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/0xmacbook/.gradle/daemon/8.5/com.example.pixelblackout.app-main-39:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/Users/0xmacbook/.gradle/daemon/8.5/com.example.pixelblackout.app-merged_res-37:/drawable_bit8_card_background.xml.flat",
+        "source": "/Users/0xmacbook/.gradle/daemon/8.5/com.example.pixelblackout.app-main-39:/drawable/bit8_card_background.xml"
+    },
+    {
+        "merged": "com.example.pixelblackout.app-merged_res-37:/layout_activity_main.xml.flat",
+        "source": "com.example.pixelblackout.app-main-39:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.pixelblackout.app-merged_res-37:/drawable_bg_message_me.xml.flat",
+        "source": "com.example.pixelblackout.app-main-39:/drawable/bg_message_me.xml"
+    },
+    {
+        "merged": "/Users/0xmacbook/.gradle/daemon/8.5/com.example.pixelblackout.app-merged_res-37:/drawable_freedraco.png.flat",
+        "source": "/Users/0xmacbook/.gradle/daemon/8.5/com.example.pixelblackout.app-main-39:/drawable/freedraco.png"
+    },
+    {
+        "merged": "/Users/0xmacbook/.gradle/daemon/8.5/com.example.pixelblackout.app-merged_res-37:/drawable_edit_text_background.xml.flat",
+        "source": "/Users/0xmacbook/.gradle/daemon/8.5/com.example.pixelblackout.app-main-39:/drawable/edit_text_background.xml"
+    },
+    {
+        "merged": "/Users/0xmacbook/.gradle/daemon/8.5/com.example.pixelblackout.app-merged_res-37:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/0xmacbook/.gradle/daemon/8.5/com.example.pixelblackout.app-main-39:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/0xmacbook/.gradle/daemon/8.5/com.example.pixelblackout.app-merged_res-37:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/0xmacbook/.gradle/daemon/8.5/com.example.pixelblackout.app-main-39:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/Users/0xmacbook/.gradle/daemon/8.5/com.example.pixelblackout.app-merged_res-37:/drawable_modern_error_background.xml.flat",
+        "source": "/Users/0xmacbook/.gradle/daemon/8.5/com.example.pixelblackout.app-main-39:/drawable/modern_error_background.xml"
+    },
+    {
+        "merged": "/Users/0xmacbook/.gradle/daemon/8.5/com.example.pixelblackout.app-merged_res-37:/xml_stealth_accessibility_config.xml.flat",
+        "source": "/Users/0xmacbook/.gradle/daemon/8.5/com.example.pixelblackout.app-main-39:/xml/stealth_accessibility_config.xml"
+    },
+    {
+        "merged": "/Users/0xmacbook/.gradle/daemon/8.5/com.example.pixelblackout.app-merged_res-37:/drawable_ic_launcher_background.xml.flat",
+        "source": "/Users/0xmacbook/.gradle/daemon/8.5/com.example.pixelblackout.app-main-39:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/Users/0xmacbook/.gradle/daemon/8.5/com.example.pixelblackout.app-merged_res-37:/drawable_bit8_icon_background.xml.flat",
+        "source": "/Users/0xmacbook/.gradle/daemon/8.5/com.example.pixelblackout.app-main-39:/drawable/bit8_icon_background.xml"
+    },
+    {
+        "merged": "/Users/0xmacbook/.gradle/daemon/8.5/com.example.pixelblackout.app-merged_res-37:/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "/Users/0xmacbook/.gradle/daemon/8.5/com.example.pixelblackout.app-main-39:/drawable-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/Users/0xmacbook/.gradle/daemon/8.5/com.example.pixelblackout.app-merged_res-37:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/Users/0xmacbook/.gradle/daemon/8.5/com.example.pixelblackout.app-main-39:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/0xmacbook/.gradle/daemon/8.5/com.example.pixelblackout.app-merged_res-37:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/0xmacbook/.gradle/daemon/8.5/com.example.pixelblackout.app-main-39:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/0xmacbook/.gradle/daemon/8.5/com.example.pixelblackout.app-merged_res-37:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/0xmacbook/.gradle/daemon/8.5/com.example.pixelblackout.app-main-39:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/0xmacbook/.gradle/daemon/8.5/com.example.pixelblackout.app-merged_res-37:/xml_data_extraction_rules.xml.flat",
+        "source": "/Users/0xmacbook/.gradle/daemon/8.5/com.example.pixelblackout.app-main-39:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "/Users/0xmacbook/.gradle/daemon/8.5/com.example.pixelblackout.app-merged_res-37:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/0xmacbook/.gradle/daemon/8.5/com.example.pixelblackout.app-main-39:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/0xmacbook/.gradle/daemon/8.5/com.example.pixelblackout.app-merged_res-37:/drawable_bit8_entry_background.xml.flat",
+        "source": "/Users/0xmacbook/.gradle/daemon/8.5/com.example.pixelblackout.app-main-39:/drawable/bit8_entry_background.xml"
+    },
+    {
+        "merged": "/Users/0xmacbook/.gradle/daemon/8.5/com.example.pixelblackout.app-merged_res-37:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/0xmacbook/.gradle/daemon/8.5/com.example.pixelblackout.app-main-39:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/0xmacbook/.gradle/daemon/8.5/com.example.pixelblackout.app-merged_res-37:/drawable_modern_button_background.xml.flat",
+        "source": "/Users/0xmacbook/.gradle/daemon/8.5/com.example.pixelblackout.app-main-39:/drawable/modern_button_background.xml"
+    },
+    {
+        "merged": "com.example.pixelblackout.app-merged_res-37:/layout_item_message_peer.xml.flat",
+        "source": "com.example.pixelblackout.app-main-39:/layout/item_message_peer.xml"
+    },
+    {
+        "merged": "/Users/0xmacbook/.gradle/daemon/8.5/com.example.pixelblackout.app-merged_res-37:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/0xmacbook/.gradle/daemon/8.5/com.example.pixelblackout.app-main-39:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.pixelblackout.app-merged_res-37:/layout_item_message_me.xml.flat",
+        "source": "com.example.pixelblackout.app-main-39:/layout/item_message_me.xml"
+    },
+    {
+        "merged": "/Users/0xmacbook/.gradle/daemon/8.5/com.example.pixelblackout.app-merged_res-37:/xml_backup_rules.xml.flat",
+        "source": "/Users/0xmacbook/.gradle/daemon/8.5/com.example.pixelblackout.app-main-39:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "/Users/0xmacbook/.gradle/daemon/8.5/com.example.pixelblackout.app-merged_res-37:/drawable_bit8_button_background.xml.flat",
+        "source": "/Users/0xmacbook/.gradle/daemon/8.5/com.example.pixelblackout.app-main-39:/drawable/bit8_button_background.xml"
+    },
+    {
+        "merged": "/Users/0xmacbook/.gradle/daemon/8.5/com.example.pixelblackout.app-merged_res-37:/drawable_bit8_input_background.xml.flat",
+        "source": "/Users/0xmacbook/.gradle/daemon/8.5/com.example.pixelblackout.app-main-39:/drawable/bit8_input_background.xml"
+    },
+    {
+        "merged": "/Users/0xmacbook/.gradle/daemon/8.5/com.example.pixelblackout.app-merged_res-37:/drawable_arrow_right.xml.flat",
+        "source": "/Users/0xmacbook/.gradle/daemon/8.5/com.example.pixelblackout.app-main-39:/drawable/arrow_right.xml"
+    },
+    {
+        "merged": "/Users/0xmacbook/.gradle/daemon/8.5/com.example.pixelblackout.app-merged_res-37:/layout_activity_main.xml.flat",
+        "source": "/Users/0xmacbook/.gradle/daemon/8.5/com.example.pixelblackout.app-main-39:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/0xmacbook/.gradle/daemon/8.5/com.example.pixelblackout.app-merged_res-37:/drawable_bit8_header_background.xml.flat",
+        "source": "/Users/0xmacbook/.gradle/daemon/8.5/com.example.pixelblackout.app-main-39:/drawable/bit8_header_background.xml"
+    },
+    {
+        "merged": "/Users/0xmacbook/.gradle/daemon/8.5/com.example.pixelblackout.app-merged_res-37:/drawable_modern_dialog_background.xml.flat",
+        "source": "/Users/0xmacbook/.gradle/daemon/8.5/com.example.pixelblackout.app-main-39:/drawable/modern_dialog_background.xml"
+    },
+    {
+        "merged": "/Users/0xmacbook/.gradle/daemon/8.5/com.example.pixelblackout.app-merged_res-37:/drawable_result_background.xml.flat",
+        "source": "/Users/0xmacbook/.gradle/daemon/8.5/com.example.pixelblackout.app-main-39:/drawable/result_background.xml"
+    },
+    {
+        "merged": "com.example.pixelblackout.app-merged_res-37:/drawable_bg_message_peer.xml.flat",
+        "source": "com.example.pixelblackout.app-main-39:/drawable/bg_message_peer.xml"
+    },
+    {
+        "merged": "/Users/0xmacbook/.gradle/daemon/8.5/com.example.pixelblackout.app-merged_res-37:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/0xmacbook/.gradle/daemon/8.5/com.example.pixelblackout.app-main-39:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/0xmacbook/.gradle/daemon/8.5/com.example.pixelblackout.app-merged_res-37:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/Users/0xmacbook/.gradle/daemon/8.5/com.example.pixelblackout.app-main-39:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/0xmacbook/.gradle/daemon/8.5/com.example.pixelblackout.app-merged_res-37:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/Users/0xmacbook/.gradle/daemon/8.5/com.example.pixelblackout.app-main-39:/mipmap-xhdpi/ic_launcher.webp"
+    }
+]

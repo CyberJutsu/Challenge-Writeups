@@ -1,0 +1,39 @@
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-6 text-center">
+            <div class="error-page">
+                <h1 class="display-1 fw-bold text-primary">404</h1>
+                <h2 class="mb-4"><%= typeof message !== 'undefined' ? 'Note Not Found' : 'Page Not Found' %></h2>
+                <p class="lead mb-4">
+                    <%= typeof message !== 'undefined' ? message : 'Sorry, the page you are looking for could not be found.' %>
+                </p>
+                <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
+                    <a href="/" class="btn btn-primary btn-lg">
+                        <i class="fas fa-home me-2"></i>Back to Home
+                    </a>
+                    <a href="/" class="btn btn-outline-primary btn-lg">
+                        <i class="fas fa-plus me-2"></i>Create New Note
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.error-page {
+    padding: 3rem 0;
+}
+
+.error-page h1 {
+    font-size: 8rem;
+    line-height: 1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .error-page h1 {
+        font-size: 5rem;
+    }
+}
+</style>

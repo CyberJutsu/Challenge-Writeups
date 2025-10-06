@@ -1,0 +1,103 @@
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial, sans-serif;
+  margin: 2rem auto;
+  max-width: 720px;
+  padding: 0 1.25rem;
+  background: #fff;
+  color: #222;
+}
+
+main {
+  display: grid;
+  gap: 1.25rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+}
+
+.branding {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.55rem;
+}
+
+.tagline {
+  font-size: 0.92rem;
+  color: #555;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.25rem 1.35rem;
+  background: #fff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+label {
+  font-size: 0.88rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #333;
+}
+
+input {
+  padding: 0.6rem 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #fafafa;
+  color: #222;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #0b5ed7;
+  background: #fff;
+}
+
+button {
+  padding: 0.62rem 0.9rem;
+  border: 1px solid #0a53be;
+  border-radius: 6px;
+  font-size: 0.96rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #fff;
+  background: #0b5ed7;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+button:hover {
+  background: #0949ab;
+}
+
+.message {
+  min-height: 1.15rem;
+  font-size: 0.95rem;
+  color: #d6336c;
+}
+
+footer {
+  margin-top: 0.5rem;
+  color: #666;
+  font-size: 0.88rem;
+  text-align: right;
+}

@@ -1,0 +1,169 @@
+{
+  "abi": "X86",
+  "info": {
+    "abi": "X86",
+    "bitness": 32,
+    "deprecated": false,
+    "default": true
+  },
+  "cxxBuildFolder": "/Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/.cxx/RelWithDebInfo/3h4v5m15/x86",
+  "soFolder": "/Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/build/intermediates/cxx/RelWithDebInfo/3h4v5m15/obj/x86",
+  "soRepublishFolder": "/Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/build/intermediates/cmake/release/obj/x86",
+  "abiPlatformVersion": 31,
+  "cmake": {
+    "effectiveConfiguration": {
+      "inheritEnvironments": [],
+      "variables": []
+    }
+  },
+  "variant": {
+    "buildSystemArgumentList": [],
+    "cFlagsList": [],
+    "cppFlagsList": [
+      "-std\u003dc++17"
+    ],
+    "variantName": "release",
+    "isDebuggableEnabled": false,
+    "validAbiList": [
+      "ARMEABI_V7A",
+      "ARM64_V8A",
+      "X86",
+      "X86_64"
+    ],
+    "buildTargetSet": [],
+    "implicitBuildTargetSet": [],
+    "cmakeSettingsConfiguration": "android-gradle-plugin-predetermined-name",
+    "module": {
+      "cxxFolder": "/Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/.cxx",
+      "intermediatesBaseFolder": "/Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/build/intermediates",
+      "intermediatesFolder": "/Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/build/intermediates/cxx",
+      "gradleModulePathName": ":app",
+      "moduleRootFolder": "/Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app",
+      "moduleBuildFile": "/Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/build.gradle",
+      "makeFile": "/Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/cpp/CMakeLists.txt",
+      "buildSystem": "CMAKE",
+      "ndkFolder": "/Users/0xmacbook/Library/Android/sdk/ndk/23.1.7779620",
+      "ndkVersion": "23.1.7779620",
+      "ndkSupportedAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "ndkDefaultAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "ndkDefaultStl": "LIBCXX_STATIC",
+      "ndkMetaPlatforms": {
+        "min": 16,
+        "max": 31,
+        "aliases": {
+          "20": 19,
+          "25": 24,
+          "J": 16,
+          "J-MR1": 17,
+          "J-MR2": 18,
+          "K": 19,
+          "L": 21,
+          "L-MR1": 22,
+          "M": 23,
+          "N": 24,
+          "N-MR1": 24,
+          "O": 26,
+          "O-MR1": 27,
+          "P": 28,
+          "Q": 29,
+          "R": 30,
+          "S": 31
+        }
+      },
+      "ndkMetaAbiList": [
+        {
+          "abi": "ARMEABI_V7A",
+          "bitness": 32,
+          "deprecated": false,
+          "default": true
+        },
+        {
+          "abi": "ARM64_V8A",
+          "bitness": 64,
+          "deprecated": false,
+          "default": true
+        },
+        {
+          "abi": "X86",
+          "bitness": 32,
+          "deprecated": false,
+          "default": true
+        },
+        {
+          "abi": "X86_64",
+          "bitness": 64,
+          "deprecated": false,
+          "default": true
+        }
+      ],
+      "cmakeToolchainFile": "/Users/0xmacbook/Library/Android/sdk/ndk/23.1.7779620/build/cmake/android.toolchain.cmake",
+      "cmake": {
+        "isValidCmakeAvailable": true,
+        "cmakeExe": "/Users/0xmacbook/Library/Android/sdk/cmake/3.22.1/bin/cmake",
+        "minimumCmakeVersion": "3.22.1"
+      },
+      "stlSharedObjectMap": {
+        "LIBCXX_SHARED": {
+          "ARMEABI_V7A": "/Users/0xmacbook/Library/Android/sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/arm-linux-androideabi/libc++_shared.so",
+          "ARM64_V8A": "/Users/0xmacbook/Library/Android/sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/aarch64-linux-android/libc++_shared.so",
+          "X86": "/Users/0xmacbook/Library/Android/sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/i686-linux-android/libc++_shared.so",
+          "X86_64": "/Users/0xmacbook/Library/Android/sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/x86_64-linux-android/libc++_shared.so"
+        },
+        "LIBCXX_STATIC": {},
+        "NONE": {},
+        "SYSTEM": {}
+      },
+      "project": {
+        "rootBuildGradleFolder": "/Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge",
+        "sdkFolder": "/Users/0xmacbook/Library/Android/sdk",
+        "isBuildOnlyTargetAbiEnabled": true,
+        "isCmakeBuildCohabitationEnabled": false,
+        "isPrefabEnabled": false
+      },
+      "outputOptions": [],
+      "ninjaExe": "/Users/0xmacbook/Library/Android/sdk/cmake/3.22.1/bin/ninja"
+    },
+    "prefabClassPaths": [],
+    "prefabPackages": [],
+    "prefabPackageConfigurations": [],
+    "stlType": "c++_static",
+    "optimizationTag": "RelWithDebInfo"
+  },
+  "buildSettings": {
+    "environmentVariables": []
+  },
+  "prefabFolder": "/Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/.cxx/RelWithDebInfo/3h4v5m15/prefab/x86",
+  "isActiveAbi": true,
+  "fullConfigurationHash": "3h4v5m15353r1bc2p3g5i5w5e224p134r4c273f11o46pp2w5dv3u4jj3x",
+  "fullConfigurationHashKey": "# Values used to calculate the hash in this folder name.\n# Should not depend on the absolute path of the project itself.\n#   - AGP: 7.4.2.\n#   - $NDK is the path to NDK 23.1.7779620.\n#   - $PROJECT is the path to the parent folder of the root Gradle build file.\n#   - $ABI is the ABI to be built with. The specific value doesn\u0027t contribute to the value of the hash.\n#   - $HASH is the hash value computed from this text.\n#   - $CMAKE is the path to CMake 3.22.1.\n#   - $NINJA is the path to Ninja.\n-H$PROJECT/app/src/main/cpp\n-DCMAKE_SYSTEM_NAME\u003dAndroid\n-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON\n-DCMAKE_SYSTEM_VERSION\u003d31\n-DANDROID_PLATFORM\u003dandroid-31\n-DANDROID_ABI\u003d$ABI\n-DCMAKE_ANDROID_ARCH_ABI\u003d$ABI\n-DANDROID_NDK\u003d$NDK\n-DCMAKE_ANDROID_NDK\u003d$NDK\n-DCMAKE_TOOLCHAIN_FILE\u003d$NDK/build/cmake/android.toolchain.cmake\n-DCMAKE_MAKE_PROGRAM\u003d$NINJA\n-DCMAKE_CXX_FLAGS\u003d-std\u003dc++17\n-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003d$PROJECT/app/build/intermediates/cxx/RelWithDebInfo/$HASH/obj/$ABI\n-DCMAKE_RUNTIME_OUTPUT_DIRECTORY\u003d$PROJECT/app/build/intermediates/cxx/RelWithDebInfo/$HASH/obj/$ABI\n-DCMAKE_BUILD_TYPE\u003dRelWithDebInfo\n-B$PROJECT/app/.cxx/RelWithDebInfo/$HASH/$ABI\n-GNinja",
+  "configurationArguments": [
+    "-H/Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/cpp",
+    "-DCMAKE_SYSTEM_NAME\u003dAndroid",
+    "-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON",
+    "-DCMAKE_SYSTEM_VERSION\u003d31",
+    "-DANDROID_PLATFORM\u003dandroid-31",
+    "-DANDROID_ABI\u003dx86",
+    "-DCMAKE_ANDROID_ARCH_ABI\u003dx86",
+    "-DANDROID_NDK\u003d/Users/0xmacbook/Library/Android/sdk/ndk/23.1.7779620",
+    "-DCMAKE_ANDROID_NDK\u003d/Users/0xmacbook/Library/Android/sdk/ndk/23.1.7779620",
+    "-DCMAKE_TOOLCHAIN_FILE\u003d/Users/0xmacbook/Library/Android/sdk/ndk/23.1.7779620/build/cmake/android.toolchain.cmake",
+    "-DCMAKE_MAKE_PROGRAM\u003d/Users/0xmacbook/Library/Android/sdk/cmake/3.22.1/bin/ninja",
+    "-DCMAKE_CXX_FLAGS\u003d-std\u003dc++17",
+    "-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003d/Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/build/intermediates/cxx/RelWithDebInfo/3h4v5m15/obj/x86",
+    "-DCMAKE_RUNTIME_OUTPUT_DIRECTORY\u003d/Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/build/intermediates/cxx/RelWithDebInfo/3h4v5m15/obj/x86",
+    "-DCMAKE_BUILD_TYPE\u003dRelWithDebInfo",
+    "-B/Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/.cxx/RelWithDebInfo/3h4v5m15/x86",
+    "-GNinja"
+  ],
+  "intermediatesParentFolder": "/Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/build/intermediates/cxx/RelWithDebInfo/3h4v5m15"
+}

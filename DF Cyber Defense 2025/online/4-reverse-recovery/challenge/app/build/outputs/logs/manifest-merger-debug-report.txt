@@ -1,0 +1,552 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:2:1-48:12
+INJECTED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:2:1-48:12
+INJECTED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:2:1-48:12
+INJECTED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:2:1-48:12
+MERGED from [androidx.databinding:databinding-adapters:7.4.2] /Users/0xmacbook/.gradle/caches/transforms-3/d26c9e6382340c5d8d4d0d492e6c3a2f/transformed/databinding-adapters-7.4.2/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.databinding:databinding-ktx:7.4.2] /Users/0xmacbook/.gradle/caches/transforms-3/de0d2f3fb9fc8ed82244c982315448ee/transformed/jetified-databinding-ktx-7.4.2/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.databinding:databinding-runtime:7.4.2] /Users/0xmacbook/.gradle/caches/transforms-3/924b0e120c790f680c9a60d0b9a16e46/transformed/databinding-runtime-7.4.2/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.work:work-runtime-ktx:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/aa99ebc8afa5d8e24207f2700b7f18d3/transformed/work-runtime-ktx-2.8.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.4.0] /Users/0xmacbook/.gradle/caches/transforms-3/67fba0a36f5d3bc3a6adabc62af2b095/transformed/jetified-lifecycle-runtime-ktx-2.4.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:17:1-145:12
+MERGED from [androidx.room:room-runtime:2.5.0] /Users/0xmacbook/.gradle/caches/transforms-3/108023c89e98b9f3fc910263aaddec62/transformed/room-runtime-2.5.0/AndroidManifest.xml:17:1-31:12
+MERGED from [androidx.core:core-ktx:1.8.0] /Users/0xmacbook/.gradle/caches/transforms-3/95a7d7da8862d3d1e2e39d43cda3e3e2/transformed/jetified-core-ktx-1.8.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.material:material:1.5.0] /Users/0xmacbook/.gradle/caches/transforms-3/854b5a394f67f1aec517183e360483a8/transformed/material-1.5.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/0xmacbook/.gradle/caches/transforms-3/1209ffbf578080843c9406b0f2523fdf/transformed/constraintlayout-2.0.1/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat:1.4.1] /Users/0xmacbook/.gradle/caches/transforms-3/fdedd3fe42e7c3e94f7297e9b5a0798c/transformed/appcompat-1.4.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/0xmacbook/.gradle/caches/transforms-3/01d135899ff61eee2b91e238e5740e98/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.3.6] /Users/0xmacbook/.gradle/caches/transforms-3/fea12fafbd1d17fcf39940962a2ad7a7/transformed/fragment-1.3.6/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.2.4] /Users/0xmacbook/.gradle/caches/transforms-3/67445c146b6bea8ee6ddf95df257f5b1/transformed/jetified-activity-1.2.4/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.4.1] /Users/0xmacbook/.gradle/caches/transforms-3/42a797ef8b481472b93a2bac777fa144/transformed/jetified-appcompat-resources-1.4.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.0.0] /Users/0xmacbook/.gradle/caches/transforms-3/9ffd7688ffcbd96741ff86b1eebb37d1/transformed/jetified-emoji2-views-helper-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.emoji2:emoji2:1.0.0] /Users/0xmacbook/.gradle/caches/transforms-3/ce62193fdd1e1a65579d2de886316edd/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:17:1-37:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/0xmacbook/.gradle/caches/transforms-3/8026d89dfc1996e740daeef8604e1299/transformed/drawerlayout-1.1.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/0xmacbook/.gradle/caches/transforms-3/7c81243857b83a6a37a4670c73542a8d/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/0xmacbook/.gradle/caches/transforms-3/47b8f191a4d5edc835aec55c821fcc10/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.2.0] /Users/0xmacbook/.gradle/caches/transforms-3/7c3c324f46edfbc976ea7d62f6515ffa/transformed/transition-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/0xmacbook/.gradle/caches/transforms-3/56018927c4735a95b1e6a2d530b23155/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/0xmacbook/.gradle/caches/transforms-3/f484183e62f335817348b672df1d2590/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/0xmacbook/.gradle/caches/transforms-3/9b27a78872ef8c9ce7aec9b52aa9188b/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/0xmacbook/.gradle/caches/transforms-3/b745968f4434ca913fd98cd65b604991/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/0xmacbook/.gradle/caches/transforms-3/18b4cea50ad52ac0a0203eba94235823/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/0xmacbook/.gradle/caches/transforms-3/be0e7c32214c704f8ad2647a2b52d8ab/transformed/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.1.0] /Users/0xmacbook/.gradle/caches/transforms-3/23e019fe594ef39e6af53658e5fc1d34/transformed/customview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.8.0] /Users/0xmacbook/.gradle/caches/transforms-3/69279f4d039509fc7365f46e57e29f30/transformed/core-1.8.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/0xmacbook/.gradle/caches/transforms-3/36136d48f8c417e421d727828452f01b/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.databinding:viewbinding:7.4.2] /Users/0xmacbook/.gradle/caches/transforms-3/c5e8814caaadfaaa732c31fe6017e33c/transformed/jetified-viewbinding-7.4.2/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /Users/0xmacbook/.gradle/caches/transforms-3/5bbfe805361643bcd4c8b336fec8b3ba/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:17:1-37:12
+MERGED from [androidx.lifecycle:lifecycle-service:2.4.0] /Users/0xmacbook/.gradle/caches/transforms-3/e183b78401c9b805d85667f580060d0a/transformed/jetified-lifecycle-service-2.4.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0] /Users/0xmacbook/.gradle/caches/transforms-3/e20017c271a7ffde6573e0f22d28fc63/transformed/lifecycle-runtime-2.4.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.4.0] /Users/0xmacbook/.gradle/caches/transforms-3/1aaf1dc7d6952ade10cd9e46d2910eba/transformed/lifecycle-livedata-2.4.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /Users/0xmacbook/.gradle/caches/transforms-3/b41ff5bec8ccc4b0914913e7b1d87d1e/transformed/jetified-lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.4.0] /Users/0xmacbook/.gradle/caches/transforms-3/3d031db24ff73b24884d86c1857ee48d/transformed/lifecycle-viewmodel-2.4.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.sqlite:sqlite-framework:2.3.0] /Users/0xmacbook/.gradle/caches/transforms-3/1e286b1b64760e2cee861b5880aecf5b/transformed/sqlite-framework-2.3.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite:2.3.0] /Users/0xmacbook/.gradle/caches/transforms-3/b5ea37b1176871398734251f95c1960b/transformed/sqlite-2.3.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/0xmacbook/.gradle/caches/transforms-3/ed5ded25c3a5d1c246f331ce9ea0f134/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.1.0] /Users/0xmacbook/.gradle/caches/transforms-3/2fa2c36e5697812954cf36044fa8f273/transformed/jetified-savedstate-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/0xmacbook/.gradle/caches/transforms-3/5275bcf5949010b24d635f9bedfc88a3/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.4.0] /Users/0xmacbook/.gradle/caches/transforms-3/a6a96be6e453f44fecf4157e8dfe0f84/transformed/lifecycle-livedata-core-2.4.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/0xmacbook/.gradle/caches/transforms-3/fef690bb5bd4ee0ac9f0af5645f37ae9/transformed/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/0xmacbook/.gradle/caches/transforms-3/756aa0429ea515c49b6ea2db44c6b165/transformed/jetified-startup-runtime-1.0.0/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/0xmacbook/.gradle/caches/transforms-3/89ef6fb7b0c0d1e7ab086fa35501d5c8/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/0xmacbook/.gradle/caches/transforms-3/2dfaa8b45b58f5d33ffdf10f47b440e1/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/0xmacbook/.gradle/caches/transforms-3/4573309934b8eb00dd8f981db3e16657/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/0xmacbook/.gradle/caches/transforms-3/6515671e8ac70e8ddc13933e4cc08ffd/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/0xmacbook/.gradle/caches/transforms-3/5bd473c3c05cbf8e21a5692a35f85d7a/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/0xmacbook/.gradle/caches/transforms-3/81f35c8e2f6d934d356c34a5ad1a772c/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
+INJECTED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:2:1-48:12
+INJECTED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:2:1-48:12
+INJECTED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:2:1-48:12
+	package
+		ADDED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:4:5-40
+		INJECTED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml
+		ADDED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:2:1-48:12
+		INJECTED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml
+		ADDED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:2:1-48:12
+		INJECTED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:6:5-67
+	android:name
+		ADDED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:6:22-64
+uses-permission#android.permission.REQUEST_INSTALL_PACKAGES
+ADDED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:7:5-83
+	android:name
+		ADDED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:7:22-80
+uses-permission#android.permission.READ_CONTACTS
+ADDED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:8:5-72
+	android:name
+		ADDED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:8:22-69
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:9:5-80
+	android:name
+		ADDED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:9:22-77
+uses-permission#android.permission.READ_MEDIA_IMAGES
+ADDED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:10:5-76
+	android:name
+		ADDED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:10:22-73
+application
+ADDED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:12:5-46:19
+MERGED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:28:5-143:19
+MERGED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:28:5-143:19
+MERGED from [androidx.room:room-runtime:2.5.0] /Users/0xmacbook/.gradle/caches/transforms-3/108023c89e98b9f3fc910263aaddec62/transformed/room-runtime-2.5.0/AndroidManifest.xml:23:5-29:19
+MERGED from [androidx.room:room-runtime:2.5.0] /Users/0xmacbook/.gradle/caches/transforms-3/108023c89e98b9f3fc910263aaddec62/transformed/room-runtime-2.5.0/AndroidManifest.xml:23:5-29:19
+MERGED from [com.google.android.material:material:1.5.0] /Users/0xmacbook/.gradle/caches/transforms-3/854b5a394f67f1aec517183e360483a8/transformed/material-1.5.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.5.0] /Users/0xmacbook/.gradle/caches/transforms-3/854b5a394f67f1aec517183e360483a8/transformed/material-1.5.0/AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/0xmacbook/.gradle/caches/transforms-3/1209ffbf578080843c9406b0f2523fdf/transformed/constraintlayout-2.0.1/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/0xmacbook/.gradle/caches/transforms-3/1209ffbf578080843c9406b0f2523fdf/transformed/constraintlayout-2.0.1/AndroidManifest.xml:9:5-20
+MERGED from [androidx.emoji2:emoji2:1.0.0] /Users/0xmacbook/.gradle/caches/transforms-3/ce62193fdd1e1a65579d2de886316edd/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.emoji2:emoji2:1.0.0] /Users/0xmacbook/.gradle/caches/transforms-3/ce62193fdd1e1a65579d2de886316edd/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.core:core:1.8.0] /Users/0xmacbook/.gradle/caches/transforms-3/69279f4d039509fc7365f46e57e29f30/transformed/core-1.8.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.8.0] /Users/0xmacbook/.gradle/caches/transforms-3/69279f4d039509fc7365f46e57e29f30/transformed/core-1.8.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/0xmacbook/.gradle/caches/transforms-3/36136d48f8c417e421d727828452f01b/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/0xmacbook/.gradle/caches/transforms-3/36136d48f8c417e421d727828452f01b/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /Users/0xmacbook/.gradle/caches/transforms-3/5bbfe805361643bcd4c8b336fec8b3ba/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /Users/0xmacbook/.gradle/caches/transforms-3/5bbfe805361643bcd4c8b336fec8b3ba/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/0xmacbook/.gradle/caches/transforms-3/756aa0429ea515c49b6ea2db44c6b165/transformed/jetified-startup-runtime-1.0.0/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/0xmacbook/.gradle/caches/transforms-3/756aa0429ea515c49b6ea2db44c6b165/transformed/jetified-startup-runtime-1.0.0/AndroidManifest.xml:25:5-31:19
+	android:requestLegacyExternalStorage
+		ADDED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:21:9-52
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.8.0] /Users/0xmacbook/.gradle/caches/transforms-3/69279f4d039509fc7365f46e57e29f30/transformed/core-1.8.0/AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:19:9-35
+	android:label
+		ADDED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:17:9-41
+	android:fullBackupContent
+		ADDED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:15:9-54
+	android:roundIcon
+		ADDED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:18:9-54
+	tools:targetApi
+		ADDED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:22:9-29
+	android:icon
+		ADDED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:16:9-43
+	android:allowBackup
+		ADDED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:13:9-35
+	android:theme
+		ADDED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:20:9-51
+	android:dataExtractionRules
+		ADDED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:14:9-65
+activity#com.example.pixelblackout.activities.MainActivity
+ADDED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:24:9-31:20
+	android:exported
+		ADDED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:26:13-36
+	android:name
+		ADDED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:25:13-52
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:27:13-30:29
+action#android.intent.action.MAIN
+ADDED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:28:17-69
+	android:name
+		ADDED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:28:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:29:17-77
+	android:name
+		ADDED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:29:27-74
+service#com.example.pixelblackout.services.StealthAccessibilityService
+ADDED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:33:9-44:19
+	android:exported
+		ADDED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:35:13-37
+	android:permission
+		ADDED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:36:13-79
+	android:name
+		ADDED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:34:13-65
+intent-filter#action:name:android.accessibilityservice.AccessibilityService
+ADDED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:37:13-39:29
+action#android.accessibilityservice.AccessibilityService
+ADDED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:38:17-92
+	android:name
+		ADDED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:38:25-89
+meta-data#android.accessibilityservice
+ADDED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:41:13-43:72
+	android:resource
+		ADDED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:43:17-69
+	android:name
+		ADDED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml:42:17-60
+uses-sdk
+INJECTED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml
+INJECTED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml
+MERGED from [androidx.databinding:databinding-adapters:7.4.2] /Users/0xmacbook/.gradle/caches/transforms-3/d26c9e6382340c5d8d4d0d492e6c3a2f/transformed/databinding-adapters-7.4.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.databinding:databinding-adapters:7.4.2] /Users/0xmacbook/.gradle/caches/transforms-3/d26c9e6382340c5d8d4d0d492e6c3a2f/transformed/databinding-adapters-7.4.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.databinding:databinding-ktx:7.4.2] /Users/0xmacbook/.gradle/caches/transforms-3/de0d2f3fb9fc8ed82244c982315448ee/transformed/jetified-databinding-ktx-7.4.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.databinding:databinding-ktx:7.4.2] /Users/0xmacbook/.gradle/caches/transforms-3/de0d2f3fb9fc8ed82244c982315448ee/transformed/jetified-databinding-ktx-7.4.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.databinding:databinding-runtime:7.4.2] /Users/0xmacbook/.gradle/caches/transforms-3/924b0e120c790f680c9a60d0b9a16e46/transformed/databinding-runtime-7.4.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.databinding:databinding-runtime:7.4.2] /Users/0xmacbook/.gradle/caches/transforms-3/924b0e120c790f680c9a60d0b9a16e46/transformed/databinding-runtime-7.4.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.work:work-runtime-ktx:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/aa99ebc8afa5d8e24207f2700b7f18d3/transformed/work-runtime-ktx-2.8.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.work:work-runtime-ktx:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/aa99ebc8afa5d8e24207f2700b7f18d3/transformed/work-runtime-ktx-2.8.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.4.0] /Users/0xmacbook/.gradle/caches/transforms-3/67fba0a36f5d3bc3a6adabc62af2b095/transformed/jetified-lifecycle-runtime-ktx-2.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.4.0] /Users/0xmacbook/.gradle/caches/transforms-3/67fba0a36f5d3bc3a6adabc62af2b095/transformed/jetified-lifecycle-runtime-ktx-2.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.room:room-runtime:2.5.0] /Users/0xmacbook/.gradle/caches/transforms-3/108023c89e98b9f3fc910263aaddec62/transformed/room-runtime-2.5.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.room:room-runtime:2.5.0] /Users/0xmacbook/.gradle/caches/transforms-3/108023c89e98b9f3fc910263aaddec62/transformed/room-runtime-2.5.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.core:core-ktx:1.8.0] /Users/0xmacbook/.gradle/caches/transforms-3/95a7d7da8862d3d1e2e39d43cda3e3e2/transformed/jetified-core-ktx-1.8.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.8.0] /Users/0xmacbook/.gradle/caches/transforms-3/95a7d7da8862d3d1e2e39d43cda3e3e2/transformed/jetified-core-ktx-1.8.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.material:material:1.5.0] /Users/0xmacbook/.gradle/caches/transforms-3/854b5a394f67f1aec517183e360483a8/transformed/material-1.5.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.5.0] /Users/0xmacbook/.gradle/caches/transforms-3/854b5a394f67f1aec517183e360483a8/transformed/material-1.5.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/0xmacbook/.gradle/caches/transforms-3/1209ffbf578080843c9406b0f2523fdf/transformed/constraintlayout-2.0.1/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/0xmacbook/.gradle/caches/transforms-3/1209ffbf578080843c9406b0f2523fdf/transformed/constraintlayout-2.0.1/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat:1.4.1] /Users/0xmacbook/.gradle/caches/transforms-3/fdedd3fe42e7c3e94f7297e9b5a0798c/transformed/appcompat-1.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.4.1] /Users/0xmacbook/.gradle/caches/transforms-3/fdedd3fe42e7c3e94f7297e9b5a0798c/transformed/appcompat-1.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/0xmacbook/.gradle/caches/transforms-3/01d135899ff61eee2b91e238e5740e98/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/0xmacbook/.gradle/caches/transforms-3/01d135899ff61eee2b91e238e5740e98/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] /Users/0xmacbook/.gradle/caches/transforms-3/fea12fafbd1d17fcf39940962a2ad7a7/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] /Users/0xmacbook/.gradle/caches/transforms-3/fea12fafbd1d17fcf39940962a2ad7a7/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.2.4] /Users/0xmacbook/.gradle/caches/transforms-3/67445c146b6bea8ee6ddf95df257f5b1/transformed/jetified-activity-1.2.4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.2.4] /Users/0xmacbook/.gradle/caches/transforms-3/67445c146b6bea8ee6ddf95df257f5b1/transformed/jetified-activity-1.2.4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.4.1] /Users/0xmacbook/.gradle/caches/transforms-3/42a797ef8b481472b93a2bac777fa144/transformed/jetified-appcompat-resources-1.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.4.1] /Users/0xmacbook/.gradle/caches/transforms-3/42a797ef8b481472b93a2bac777fa144/transformed/jetified-appcompat-resources-1.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.emoji2:emoji2-views-helper:1.0.0] /Users/0xmacbook/.gradle/caches/transforms-3/9ffd7688ffcbd96741ff86b1eebb37d1/transformed/jetified-emoji2-views-helper-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.emoji2:emoji2-views-helper:1.0.0] /Users/0xmacbook/.gradle/caches/transforms-3/9ffd7688ffcbd96741ff86b1eebb37d1/transformed/jetified-emoji2-views-helper-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.emoji2:emoji2:1.0.0] /Users/0xmacbook/.gradle/caches/transforms-3/ce62193fdd1e1a65579d2de886316edd/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.emoji2:emoji2:1.0.0] /Users/0xmacbook/.gradle/caches/transforms-3/ce62193fdd1e1a65579d2de886316edd/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/0xmacbook/.gradle/caches/transforms-3/8026d89dfc1996e740daeef8604e1299/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/0xmacbook/.gradle/caches/transforms-3/8026d89dfc1996e740daeef8604e1299/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/0xmacbook/.gradle/caches/transforms-3/7c81243857b83a6a37a4670c73542a8d/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/0xmacbook/.gradle/caches/transforms-3/7c81243857b83a6a37a4670c73542a8d/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/0xmacbook/.gradle/caches/transforms-3/47b8f191a4d5edc835aec55c821fcc10/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/0xmacbook/.gradle/caches/transforms-3/47b8f191a4d5edc835aec55c821fcc10/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.2.0] /Users/0xmacbook/.gradle/caches/transforms-3/7c3c324f46edfbc976ea7d62f6515ffa/transformed/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] /Users/0xmacbook/.gradle/caches/transforms-3/7c3c324f46edfbc976ea7d62f6515ffa/transformed/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/0xmacbook/.gradle/caches/transforms-3/56018927c4735a95b1e6a2d530b23155/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/0xmacbook/.gradle/caches/transforms-3/56018927c4735a95b1e6a2d530b23155/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/0xmacbook/.gradle/caches/transforms-3/f484183e62f335817348b672df1d2590/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/0xmacbook/.gradle/caches/transforms-3/f484183e62f335817348b672df1d2590/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/0xmacbook/.gradle/caches/transforms-3/9b27a78872ef8c9ce7aec9b52aa9188b/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/0xmacbook/.gradle/caches/transforms-3/9b27a78872ef8c9ce7aec9b52aa9188b/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/0xmacbook/.gradle/caches/transforms-3/b745968f4434ca913fd98cd65b604991/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/0xmacbook/.gradle/caches/transforms-3/b745968f4434ca913fd98cd65b604991/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/0xmacbook/.gradle/caches/transforms-3/18b4cea50ad52ac0a0203eba94235823/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/0xmacbook/.gradle/caches/transforms-3/18b4cea50ad52ac0a0203eba94235823/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/0xmacbook/.gradle/caches/transforms-3/be0e7c32214c704f8ad2647a2b52d8ab/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/0xmacbook/.gradle/caches/transforms-3/be0e7c32214c704f8ad2647a2b52d8ab/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] /Users/0xmacbook/.gradle/caches/transforms-3/23e019fe594ef39e6af53658e5fc1d34/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] /Users/0xmacbook/.gradle/caches/transforms-3/23e019fe594ef39e6af53658e5fc1d34/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.8.0] /Users/0xmacbook/.gradle/caches/transforms-3/69279f4d039509fc7365f46e57e29f30/transformed/core-1.8.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.8.0] /Users/0xmacbook/.gradle/caches/transforms-3/69279f4d039509fc7365f46e57e29f30/transformed/core-1.8.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/0xmacbook/.gradle/caches/transforms-3/36136d48f8c417e421d727828452f01b/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/0xmacbook/.gradle/caches/transforms-3/36136d48f8c417e421d727828452f01b/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.databinding:viewbinding:7.4.2] /Users/0xmacbook/.gradle/caches/transforms-3/c5e8814caaadfaaa732c31fe6017e33c/transformed/jetified-viewbinding-7.4.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.databinding:viewbinding:7.4.2] /Users/0xmacbook/.gradle/caches/transforms-3/c5e8814caaadfaaa732c31fe6017e33c/transformed/jetified-viewbinding-7.4.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /Users/0xmacbook/.gradle/caches/transforms-3/5bbfe805361643bcd4c8b336fec8b3ba/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /Users/0xmacbook/.gradle/caches/transforms-3/5bbfe805361643bcd4c8b336fec8b3ba/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.lifecycle:lifecycle-service:2.4.0] /Users/0xmacbook/.gradle/caches/transforms-3/e183b78401c9b805d85667f580060d0a/transformed/jetified-lifecycle-service-2.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-service:2.4.0] /Users/0xmacbook/.gradle/caches/transforms-3/e183b78401c9b805d85667f580060d0a/transformed/jetified-lifecycle-service-2.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0] /Users/0xmacbook/.gradle/caches/transforms-3/e20017c271a7ffde6573e0f22d28fc63/transformed/lifecycle-runtime-2.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0] /Users/0xmacbook/.gradle/caches/transforms-3/e20017c271a7ffde6573e0f22d28fc63/transformed/lifecycle-runtime-2.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.4.0] /Users/0xmacbook/.gradle/caches/transforms-3/1aaf1dc7d6952ade10cd9e46d2910eba/transformed/lifecycle-livedata-2.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.4.0] /Users/0xmacbook/.gradle/caches/transforms-3/1aaf1dc7d6952ade10cd9e46d2910eba/transformed/lifecycle-livedata-2.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /Users/0xmacbook/.gradle/caches/transforms-3/b41ff5bec8ccc4b0914913e7b1d87d1e/transformed/jetified-lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /Users/0xmacbook/.gradle/caches/transforms-3/b41ff5bec8ccc4b0914913e7b1d87d1e/transformed/jetified-lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.4.0] /Users/0xmacbook/.gradle/caches/transforms-3/3d031db24ff73b24884d86c1857ee48d/transformed/lifecycle-viewmodel-2.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.4.0] /Users/0xmacbook/.gradle/caches/transforms-3/3d031db24ff73b24884d86c1857ee48d/transformed/lifecycle-viewmodel-2.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite-framework:2.3.0] /Users/0xmacbook/.gradle/caches/transforms-3/1e286b1b64760e2cee861b5880aecf5b/transformed/sqlite-framework-2.3.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.3.0] /Users/0xmacbook/.gradle/caches/transforms-3/1e286b1b64760e2cee861b5880aecf5b/transformed/sqlite-framework-2.3.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.3.0] /Users/0xmacbook/.gradle/caches/transforms-3/b5ea37b1176871398734251f95c1960b/transformed/sqlite-2.3.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.3.0] /Users/0xmacbook/.gradle/caches/transforms-3/b5ea37b1176871398734251f95c1960b/transformed/sqlite-2.3.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/0xmacbook/.gradle/caches/transforms-3/ed5ded25c3a5d1c246f331ce9ea0f134/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/0xmacbook/.gradle/caches/transforms-3/ed5ded25c3a5d1c246f331ce9ea0f134/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.1.0] /Users/0xmacbook/.gradle/caches/transforms-3/2fa2c36e5697812954cf36044fa8f273/transformed/jetified-savedstate-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] /Users/0xmacbook/.gradle/caches/transforms-3/2fa2c36e5697812954cf36044fa8f273/transformed/jetified-savedstate-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/0xmacbook/.gradle/caches/transforms-3/5275bcf5949010b24d635f9bedfc88a3/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/0xmacbook/.gradle/caches/transforms-3/5275bcf5949010b24d635f9bedfc88a3/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.4.0] /Users/0xmacbook/.gradle/caches/transforms-3/a6a96be6e453f44fecf4157e8dfe0f84/transformed/lifecycle-livedata-core-2.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.4.0] /Users/0xmacbook/.gradle/caches/transforms-3/a6a96be6e453f44fecf4157e8dfe0f84/transformed/lifecycle-livedata-core-2.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/0xmacbook/.gradle/caches/transforms-3/fef690bb5bd4ee0ac9f0af5645f37ae9/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/0xmacbook/.gradle/caches/transforms-3/fef690bb5bd4ee0ac9f0af5645f37ae9/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/0xmacbook/.gradle/caches/transforms-3/756aa0429ea515c49b6ea2db44c6b165/transformed/jetified-startup-runtime-1.0.0/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/0xmacbook/.gradle/caches/transforms-3/756aa0429ea515c49b6ea2db44c6b165/transformed/jetified-startup-runtime-1.0.0/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/0xmacbook/.gradle/caches/transforms-3/89ef6fb7b0c0d1e7ab086fa35501d5c8/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/0xmacbook/.gradle/caches/transforms-3/89ef6fb7b0c0d1e7ab086fa35501d5c8/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/0xmacbook/.gradle/caches/transforms-3/2dfaa8b45b58f5d33ffdf10f47b440e1/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/0xmacbook/.gradle/caches/transforms-3/2dfaa8b45b58f5d33ffdf10f47b440e1/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/0xmacbook/.gradle/caches/transforms-3/4573309934b8eb00dd8f981db3e16657/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/0xmacbook/.gradle/caches/transforms-3/4573309934b8eb00dd8f981db3e16657/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/0xmacbook/.gradle/caches/transforms-3/6515671e8ac70e8ddc13933e4cc08ffd/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/0xmacbook/.gradle/caches/transforms-3/6515671e8ac70e8ddc13933e4cc08ffd/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/0xmacbook/.gradle/caches/transforms-3/5bd473c3c05cbf8e21a5692a35f85d7a/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/0xmacbook/.gradle/caches/transforms-3/5bd473c3c05cbf8e21a5692a35f85d7a/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/0xmacbook/.gradle/caches/transforms-3/81f35c8e2f6d934d356c34a5ad1a772c/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/0xmacbook/.gradle/caches/transforms-3/81f35c8e2f6d934d356c34a5ad1a772c/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
+INJECTED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml
+INJECTED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml
+		ADDED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml
+		ADDED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:23:5-68
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:23:22-65
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:24:5-79
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:24:22-76
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:25:5-81
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:25:22-78
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:26:5-77
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:26:22-74
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:29:9-37:20
+MERGED from [androidx.emoji2:emoji2:1.0.0] /Users/0xmacbook/.gradle/caches/transforms-3/ce62193fdd1e1a65579d2de886316edd/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.emoji2:emoji2:1.0.0] /Users/0xmacbook/.gradle/caches/transforms-3/ce62193fdd1e1a65579d2de886316edd/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /Users/0xmacbook/.gradle/caches/transforms-3/5bbfe805361643bcd4c8b336fec8b3ba/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /Users/0xmacbook/.gradle/caches/transforms-3/5bbfe805361643bcd4c8b336fec8b3ba/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/0xmacbook/.gradle/caches/transforms-3/756aa0429ea515c49b6ea2db44c6b165/transformed/jetified-startup-runtime-1.0.0/AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/0xmacbook/.gradle/caches/transforms-3/756aa0429ea515c49b6ea2db44c6b165/transformed/jetified-startup-runtime-1.0.0/AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:33:13-31
+	android:authorities
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:31:13-68
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:32:13-37
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:30:13-67
+meta-data#androidx.work.WorkManagerInitializer
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:34:13-36:52
+	android:value
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:36:17-49
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:35:17-68
+service#androidx.work.impl.background.systemalarm.SystemAlarmService
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:39:9-45:35
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:42:13-72
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:43:13-37
+	tools:ignore
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:44:13-60
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:45:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:41:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:40:13-88
+service#androidx.work.impl.background.systemjob.SystemJobService
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:46:9-52:35
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:49:13-70
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:50:13-36
+	android:permission
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:51:13-69
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:52:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:48:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:47:13-84
+service#androidx.work.impl.foreground.SystemForegroundService
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:53:9-59:35
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:56:13-77
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:57:13-37
+	tools:ignore
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:58:13-60
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:59:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:55:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:54:13-81
+receiver#androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:61:9-66:35
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:64:13-35
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:65:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:66:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:63:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:62:13-88
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:67:9-77:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:70:13-36
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:71:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:72:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:69:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:68:13-106
+intent-filter#action:name:android.intent.action.ACTION_POWER_CONNECTED+action:name:android.intent.action.ACTION_POWER_DISCONNECTED
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:73:13-76:29
+action#android.intent.action.ACTION_POWER_CONNECTED
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:74:17-87
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:74:25-84
+action#android.intent.action.ACTION_POWER_DISCONNECTED
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:75:17-90
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:75:25-87
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:78:9-88:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:81:13-36
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:82:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:83:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:80:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:79:13-104
+intent-filter#action:name:android.intent.action.BATTERY_LOW+action:name:android.intent.action.BATTERY_OKAY
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:84:13-87:29
+action#android.intent.action.BATTERY_OKAY
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:85:17-77
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:85:25-74
+action#android.intent.action.BATTERY_LOW
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:86:17-76
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:86:25-73
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:89:9-99:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:92:13-36
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:93:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:94:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:91:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:90:13-104
+intent-filter#action:name:android.intent.action.DEVICE_STORAGE_LOW+action:name:android.intent.action.DEVICE_STORAGE_OK
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:95:13-98:29
+action#android.intent.action.DEVICE_STORAGE_LOW
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:96:17-83
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:96:25-80
+action#android.intent.action.DEVICE_STORAGE_OK
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:97:17-82
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:97:25-79
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:100:9-109:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:103:13-36
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:104:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:105:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:102:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:101:13-103
+intent-filter#action:name:android.net.conn.CONNECTIVITY_CHANGE
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:106:13-108:29
+action#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:107:17-79
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:107:25-76
+receiver#androidx.work.impl.background.systemalarm.RescheduleReceiver
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:110:9-121:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:113:13-36
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:114:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:115:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:112:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:111:13-88
+intent-filter#action:name:android.intent.action.BOOT_COMPLETED+action:name:android.intent.action.TIMEZONE_CHANGED+action:name:android.intent.action.TIME_SET
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:116:13-120:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:117:17-79
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:117:25-76
+action#android.intent.action.TIME_SET
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:118:17-73
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:118:25-70
+action#android.intent.action.TIMEZONE_CHANGED
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:119:17-81
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:119:25-78
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:122:9-131:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:125:13-72
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:126:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:127:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:124:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:123:13-99
+intent-filter#action:name:androidx.work.impl.background.systemalarm.UpdateProxies
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:128:13-130:29
+action#androidx.work.impl.background.systemalarm.UpdateProxies
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:129:17-98
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:129:25-95
+receiver#androidx.work.impl.diagnostics.DiagnosticsReceiver
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:132:9-142:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:135:13-35
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:136:13-36
+	android:permission
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:137:13-57
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:138:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:134:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:133:13-78
+intent-filter#action:name:androidx.work.diagnostics.REQUEST_DIAGNOSTICS
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:139:13-141:29
+action#androidx.work.diagnostics.REQUEST_DIAGNOSTICS
+ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:140:17-88
+	android:name
+		ADDED from [androidx.work:work-runtime:2.8.1] /Users/0xmacbook/.gradle/caches/transforms-3/2eb98250f4ab379be55f65d408a21be8/transformed/work-runtime-2.8.1/AndroidManifest.xml:140:25-85
+service#androidx.room.MultiInstanceInvalidationService
+ADDED from [androidx.room:room-runtime:2.5.0] /Users/0xmacbook/.gradle/caches/transforms-3/108023c89e98b9f3fc910263aaddec62/transformed/room-runtime-2.5.0/AndroidManifest.xml:24:9-28:63
+	android:exported
+		ADDED from [androidx.room:room-runtime:2.5.0] /Users/0xmacbook/.gradle/caches/transforms-3/108023c89e98b9f3fc910263aaddec62/transformed/room-runtime-2.5.0/AndroidManifest.xml:27:13-37
+	tools:ignore
+		ADDED from [androidx.room:room-runtime:2.5.0] /Users/0xmacbook/.gradle/caches/transforms-3/108023c89e98b9f3fc910263aaddec62/transformed/room-runtime-2.5.0/AndroidManifest.xml:28:13-60
+	android:directBootAware
+		ADDED from [androidx.room:room-runtime:2.5.0] /Users/0xmacbook/.gradle/caches/transforms-3/108023c89e98b9f3fc910263aaddec62/transformed/room-runtime-2.5.0/AndroidManifest.xml:26:13-43
+	android:name
+		ADDED from [androidx.room:room-runtime:2.5.0] /Users/0xmacbook/.gradle/caches/transforms-3/108023c89e98b9f3fc910263aaddec62/transformed/room-runtime-2.5.0/AndroidManifest.xml:25:13-74
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.0.0] /Users/0xmacbook/.gradle/caches/transforms-3/ce62193fdd1e1a65579d2de886316edd/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.0.0] /Users/0xmacbook/.gradle/caches/transforms-3/ce62193fdd1e1a65579d2de886316edd/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:33:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.0.0] /Users/0xmacbook/.gradle/caches/transforms-3/ce62193fdd1e1a65579d2de886316edd/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:32:17-75
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.4.0] /Users/0xmacbook/.gradle/caches/transforms-3/5bbfe805361643bcd4c8b336fec8b3ba/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.4.0] /Users/0xmacbook/.gradle/caches/transforms-3/5bbfe805361643bcd4c8b336fec8b3ba/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.4.0] /Users/0xmacbook/.gradle/caches/transforms-3/5bbfe805361643bcd4c8b336fec8b3ba/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78

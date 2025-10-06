@@ -1,0 +1,61 @@
+<div class="container-fluid mt-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+            
+            <div class="card">
+                <div class="card-body">
+                    <div class="mb-3">
+                        <small class="text-muted">
+                            Created: <%= new Date(note.createdAt).toLocaleString() %>
+                            <% if (note.expiresAt) { %>
+                                | Expires: <%= new Date(note.expiresAt).toLocaleString() %>
+                            <% } else { %>
+                                | No expiration
+                            <% } %>
+                            | Views: <%= note.accessCount %>
+                        </small>
+                    </div>
+                    <div class="mb-3">
+                        <pre class="note-content" style="min-height: 60vh; font-size: 1.1rem; padding: 30px;"><%= note.content %></pre>
+                    </div>
+                    <div class="d-flex gap-2">
+                        <a href="/" class="btn btn-primary">Create New Note</a>
+                        <button class="btn btn-outline-secondary" onclick="copyNoteContent()">Copy Content</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.note-content {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin: 0;
+    background: #f8f9fa;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: monospace;
+}
+</style>
+
+<script>
+function copyNoteContent() {
+    const noteContent = document.querySelector('.note-content').textContent;
+    navigator.clipboard.writeText(noteContent).then(() => {
+        const button = event.target;
+        const originalText = button.innerHTML;
+        button.innerHTML = 'Copied!';
+        button.classList.add('btn-success');
+        button.classList.remove('btn-outline-secondary');
+        
+        setTimeout(() => {
+            button.innerHTML = originalText;
+            button.classList.remove('btn-success');
+            button.classList.add('btn-outline-secondary');
+        }, 2000);
+    });
+}
+</script>

@@ -1,0 +1,25 @@
+- name: Time Is Gold
+  author: CentralCee++
+  category: Creds / Cloud
+  description: |
+    We suspect that a threat actor group has compromised the gold price website of Finova.one. Please investigate the system to identify any suspicious activities and determine whether they have gained access to our cloud infrastructure.
+  attribution: CentralCee++
+  value: 500
+  type: dynamic
+  connection_info: "http://47.129.239.241/"
+  extra:
+    initial: 500
+    decay: 8
+    minimum: 100
+    function: cbjs_logarithmic
+  flags:
+    - content: "DF25{Cloud9HackingTo5_w1th_prototyping}"
+      data: case_sensitive
+      type: static
+  topics: []
+  tags: []
+  files: []
+  hints: []
+  requirements: []
+  next: null
+  state: hidden

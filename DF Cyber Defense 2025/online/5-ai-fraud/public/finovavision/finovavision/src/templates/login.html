@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+
+{% block title %}FinovaVision - Login{% endblock %}
+
+{% block content %}
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>
+                            <i class="fas fa-sign-in-alt me-2"></i>Login
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="text-center mb-4">
+                            <div class="video-container mb-3" style="max-width: 400px; margin: 0 auto;">
+                                <video id="loginVideo" width="400" height="300" autoplay muted style="display: none;"></video>
+                                <canvas id="loginCanvas" width="400" height="300" style="display: none;"></canvas>
+                                <div id="loginPreview" class="text-center p-4" style="min-height: 300px; background: #f8f9fa; border: 2px solid #000000; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                                    <i class="fas fa-camera fa-3x mb-3" style="color: #666;"></i>
+                                    <p class="mb-0">Click "Start Camera" to begin verification</p>
+                                </div>
+                            </div>
+                            
+                            <div class="camera-controls">
+                                <button id="startLoginCamera" class="btn btn-primary">
+                                    <i class="fas fa-camera me-2"></i>Start Camera
+                                </button>
+                                <button id="captureLoginPhoto" class="btn btn-success" style="display: none;">
+                                    <i class="fas fa-camera me-2"></i>Capture Photo
+                                </button>
+                                <button id="retakeLoginPhoto" class="btn btn-warning" style="display: none;">
+                                    <i class="fas fa-redo me-2"></i>Retake
+                                </button>
+                            </div>
+                        </div>
+
+                        <form id="loginForm">
+                            <button type="submit" class="btn btn-success btn-lg w-100" disabled>
+                                <i class="fas fa-sign-in-alt me-2"></i>Access Account
+                            </button>
+                        </form>
+
+                        <div id="loginResult" class="mt-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+{% endblock %}
+
+{% block scripts %}
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            
+            const video = document.getElementById("loginVideo");
+            const canvas = document.getElementById("loginCanvas");
+            const preview = document.getElementById("loginPreview");
+            const startBtn = document.getElementById("startLoginCamera");
+            const captureBtn = document.getElementById("captureLoginPhoto");
+            const retakeBtn = document.getElementById("retakeLoginPhoto");
+            
+            
+            if (video && canvas && preview && startBtn && captureBtn && retakeBtn) {
+                try {
+                    loginCamera = new LoginCamera(
+                        "loginVideo",
+                        "loginCanvas", 
+                        "loginPreview",
+                        "startLoginCamera",
+                        "captureLoginPhoto",
+                        "retakeLoginPhoto",
+                    );
+                } catch (error) {
+                }
+            } else {
+            }
+        });
+    </script>
+{% endblock %}

@@ -1,0 +1,18 @@
+<lint-module
+    format="1"
+    dir="/Users/0xmacbook/Documents/CYBERJUTSU/2025/CTF/ctf-banking-summit-2025/quals/jeopardy/4-reverse-recovery/challenge/app"
+    name=":app"
+    type="APP"
+    maven="pixelblackout:app:"
+    gradle="7.4.2"
+    buildFolder="build"
+    bootClassPath="/Users/0xmacbook/Library/Android/sdk/platforms/android-33/android.jar:/Users/0xmacbook/Library/Android/sdk/build-tools/30.0.3/core-lambda-stubs.jar"
+    javaSourceLevel="11"
+    compileTarget="android-33">
+  <lintOptions
+      abortOnError="true"
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true"/>
+  <variant name="release"/>
+</lint-module>

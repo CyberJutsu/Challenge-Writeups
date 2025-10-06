@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/0xmacbook/.gradle/daemon/8.5/com.example.pixelblackout.app-mergeDebugResources-36:/layout/activity_main.xml",
+        "source": "/Users/0xmacbook/.gradle/daemon/8.5/com.example.pixelblackout.app-main-39:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.pixelblackout.app-mergeDebugResources-36:/layout/activity_main.xml",
+        "source": "com.example.pixelblackout.app-main-39:/layout/activity_main.xml"
+    }
+]
